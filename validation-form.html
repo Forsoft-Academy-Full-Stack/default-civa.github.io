@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style/style-global.css">
+ 
+
+    <title>Validation form</title>
+
+ 
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+    <h1>menu</h1>
+</div>
+
+<div id="container-main">
+ 
+ <div id="wrapper-main">
+
+    <header class="container-header">
+        <h1>Validation</h1>
+    </header>
+    <header class="container-header">
+
+       <form action="" id="form" method="GET">
+        
+       
+        <div class="input-container">
+            <label for="">Email</label>
+            <input type="email" placeholder="usuario@mail.com" class="input-default" id="nome-form" id="nome-form" >
+        </div>
+        <br>
+       <input type="submit" value="Enviar" class="btn-default d-coral" id="btn-enviar"> 
+       </form>
+
+ </div> 
+</div> 
+
+
+<script>
+
+function byId(tag){ return document.querySelector(tag)}
+
+/* const form = document.querySelector('#form') 
+const input = document.querySelector('#nome-form') */
+
+const form = byId('#form')
+/* const input = byId('#nome-form')   */
+
+form.addEventListener('submit', validaForm)
+
+function validaForm(event){
+   
+    const input = ['nome','email']
+
+    console.log(byId(input[i]))
+
+
+      if(input.value == ""){
+        input.parentElement.setAttribute('data-error', 'Digite seu nome')
+    } else {
+        window.alert('FOi')
+    }
+    
+   
+
+    event.preventDefault()
+    
+}
+ 
+
+</script>   
+ 
+
+</body>
+</html>

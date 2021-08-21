@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style/style-global.css">
+
+    <title>Modal</title>
+
+
+ 
+
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+     <p>menu</p>
+</div>
+
+<div id="container-main">
+ 
+<div id="wrapper-main">
+
+<button class="btn-default d-coral" id="modalopen2">Ativar modal</button>
+
+
+</div> 
+</div> 
+  
+<div id="container-modal">
+    <span class="modal-default">
+        <div class="group-info-modal">
+        <img src="./img/icon_atention.svg" alt="">
+        <h3>Pense bem!</h3>
+        <p>A eliminação dos dados é irreversível.</p>    
+        </div>
+        <div class="group-btn-modal">
+        <button class="btn-default d-coral" id="modalclose2" style="width: 150px;">Finalizar</button>
+        <button class="btn-default d-coral-out" id="modalclose2" style="width: 150px;">Finalizar</button>    
+        </div>
+</span>
+</div>
+
+
+
+
+
+
+
+<script>
+    // CHAMAR MODAL
+    const modalcontainer = document.querySelector('#container-modal')
+
+    const modalbtnclose = document.querySelector('#modalclose2')
+
+    const modalbtnopen = document.querySelector('#modalopen2')
+
+
+
+    modalbtnopen.onclick = event => {
+        modalcontainer.style.display = 'flex'
+    }
+
+    modalbtnclose.onclick = event => {
+        modalcontainer.style.display = 'none'
+    }
+</script>
+</body>
+</html>

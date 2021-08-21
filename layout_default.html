@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style/style-global.css">
+ 
+
+    <title>layout</title>
+
+    <style>
+        .container-header {background-color: tomato;}
+        .container-middle{background-color: rgb(255, 131, 109);}
+        .container-bottom {background-color: rgb(255, 172, 158);}
+    </style>
+
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+    <h1>menu</h1>
+</div>
+
+<div id="container-main">
+ 
+ <div id="wrapper-main">
+
+    <header class="container-header">
+        <h1>header</h1>
+    </header>
+    <header class="container-header">
+        <h1>header</h1>
+    </header>
+    <div class="container-middle">
+        <h1>middle</h1>
+    </div>
+
+    <div class="container-bottom">
+        <h1>bottom</h1>
+    </div>  
+
+ </div> 
+</div> 
+
+ 
+ <script>
+        // TESTAR ROLAGEM DA PAGINA
+    
+    const repeteText = document.querySelector('.container-middle')
+
+    for(let n = 0; n < 90; n++){
+        const text = document.createElement('p')
+        text.innerText = 'lorem ipsum'
+
+        repeteText.append(text)
+    }
+</script>    
+ 
+
+</body>
+</html>

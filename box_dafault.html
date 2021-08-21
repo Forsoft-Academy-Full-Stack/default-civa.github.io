@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="style/style-global.css">
+
+    <title>Box</title>
+
+    <style>
+        .space{
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px 0px;
+        }
+        .space > div{
+            margin: 5px;
+        }
+    
+    </style>
+ 
+
+</head>
+<body id="container-manager">
+
+<div id="container-menu">
+     <h1>menu</h1>
+</div>
+
+<div id="container-main">
+ 
+<div id="wrapper-main">
+
+
+
+<section class="space">
+
+<div class="box-container">
+<div class="box-wrapper">
+    <header class="box-header">Cabecalho</header>
+    <div class="box-middle">formulario</div>
+    <div class="box-bottom">botoes</div>
+</div>
+
+<div class="box-wrapper">
+    <header class="box-header">Cabecalho</header>
+    <div class="box-middle">formulario</div>
+</div>
+</div>
+
+</section>
+
+<section class="space">
+
+    <div class="box-container">
+
+<div class="box-wrapper">
+
+<!-- CONTAINER CABEÇALHO -->
+    <header class="box-header">Box com Formulario</header>
+
+<!-- CONTAINER DO MEIO -->
+<div class="box-middle box-middle-form">
+
+    <div class="input-container">
+
+        <label for="">Label</label>
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+    </div>
+
+    <div class="input-container">
+        <label for="">Label</label>
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+    </div>
+
+    <div class="input-container">
+        <label for="">Label</label>
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+    </div>
+
+    <div class="input-container">
+        <label for="">Label</label>
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+    </div>
+
+</div>
+
+<!-- CONTAINER INFERIOR BOTOES -->
+    <div class="box-bottom">
+        <div class="toggle-container">
+            <div class="toggle-btn">
+                <div class="inner-circle"></div>
+                <span class="toggle-name">Ativado</span>
+            </div> 
+            </div>
+            <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
+            <button class="btn-default btn-small d-red">Excluir</button>
+    </div>
+</div>
+
+ 
+    <div class="box-wrapper">
+        <header class="box-header">Box com Tabela</header>
+        <div class="box-middle box-middle-table">
+            <table class="table-default">
+                <tr>
+                    <th>Nome</th>
+                    <th>Estado</th>
+                    <th>CP</th>
+                    <th>Identificador</th>
+                    
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+                <tr>
+                    <td>Hopital Pan</td>
+                    <td>Rio de Janeiro</td>
+                    <td>12016-102</td>
+                    <td>215648</td>
+                </tr>
+               
+            </table>
+        </div>
+       
+
+    </div>
+
+</div>
+
+</section>
+
+
+
+<section class="space">
+
+    <div class="box-container">
+    <div class="box-wrapper">
+        <header class="box-header">
+           Config País
+        </header>
+        <div class="box-middle box-middle-form"> 
+
+            <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-coral"><span class="material-icons">add</span></div>
+        </div>
+        </div>
+    
+        <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-grey-out"><span class="material-icons icon-black">edit</span></div>
+            <div class="input-circle d-grey-out"><span class="material-icons icon-black">close</span></div>
+        </div>
+        </div>   
+    
+    </div>
+ 
+    </div>
+    
+    <div class="box-wrapper">
+        <header class="box-header">
+            Gerenciamento de subdivisão
+        </header>
+
+    <div class="box-middle box-config-region">
+
+        <div class="legend-box-region">Região</div>
+
+
+    <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons">add</span></div>
+    </div>
+    </div>
+
+    <div class="search-wrap">
+    <div class="search-box">
+    <input type="text" placeholder="Pesquisar usuario">
+    <div class="btn-common d-coral">
+    <span class="material-icons ">search</span>
+    </div>
+    </div>
+    </div>
+
+   
+            <table class="table-default table-config-country">
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+             
+            </table>
+
+    
+
+        </div>
+    </div>
+
+
+
+
+    <div class="box-wrapper">
+        <header class="box-header">
+            Gerenciamento de subdivisão
+        </header>
+
+    <div class="box-middle box-config-region">
+
+        <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-coral"><span class="material-icons">add</span></div>
+        </div>
+        </div>
+
+
+    <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons">add</span></div>
+    </div>
+    </div>
+
+    <div class="search-wrap">
+    <div class="search-box">
+    <input type="text" placeholder="Pesquisar usuario">
+    <div class="btn-common d-coral">
+    <span class="material-icons ">search</span>
+    </div>
+    </div>
+    </div>
+
+   
+            <table class="table-default table-config-country">
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+             
+            </table>
+
+    
+
+        </div>
+    </div>
+
+
+
+
+    
+    </div>
+    
+
+
+    </section>
+
+
+
+
+
+
+
+
+</div> 
+</div> 
+
+
+<script src="js/toggle-botton.js"></script>  
+
+</body>
+</html>
