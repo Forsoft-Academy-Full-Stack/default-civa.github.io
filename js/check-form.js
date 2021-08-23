@@ -1,23 +1,7 @@
-// DECLARAÇÃO DE MODAL
-getElement('finish-close-modal').addEventListener('click', modalCloseModal)  
-function modalCloseModal(){
-    getElement('container-modal').style.display = 'none'
-}
-function modalChangedData(){
-    getElement('container-modal').style.display = 'flex'
-}
-    
-
 // RETORNA ELEMENTO EM OBJETO
 function getElement(element){
     return document.getElementById(element)
 }
-
-// INPUTS
-const elementsForm = ['name-complet','date-birth','identity','country-origin','contact','email']
-// ID DO FORMULARIO
-const nameForm = 'form-panel-supervisor'
-
 // EVENTO SUBMIT FORMULARIO
 getElement(nameForm).addEventListener('submit', checkForm)
 
@@ -28,16 +12,10 @@ function checkForm(event){
 
     if(getElement(elementsForm[num]).value == ''){
 
-            getElement(elementsForm[num]).parentElement.setAttribute('data-error','insira um valor')
-            break;
+            window.alert(`O campo ${getElement(elementsForm[num]).name} está vazio`)
 
-        } else if((elementsForm.length-1) == elementsForm[num].length){
-
-            const inputContainers = document.getElementsByClassName('input-container')
-            for(let x = 0; x< inputContainers.length; x++){
-                inputContainers[x].removeAttribute('data-error')
-            }
-            modalChangedData()
+    } else if((elementsForm.length-1) == num){
+            window.alert(`Formulario enviado com sucesso`)
             break;
             
         }

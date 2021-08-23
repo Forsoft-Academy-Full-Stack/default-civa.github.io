@@ -283,12 +283,13 @@ h4 {
 .input-container[data-error] .input-default{
     border: 2px solid $d-color-error;
     color: $d-blue-dark;
+    background-color: #fff3f2;
 }
  /* MENSAGEM DE ERRO INPUT */
 .input-container[data-error]::after{
     content: attr(data-error);
     color: $d-color-error;
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px 5px 0px;
 }
 
