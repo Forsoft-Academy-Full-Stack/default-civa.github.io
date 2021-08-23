@@ -47,35 +47,7 @@
 
 <script>
 
-function byId(tag){ return document.querySelector(tag)}
 
-/* const form = document.querySelector('#form') 
-const input = document.querySelector('#nome-form') */
-
-const form = byId('#form')
-/* const input = byId('#nome-form')   */
-
-form.addEventListener('submit', validaForm)
-
-function validaForm(event){
-   
-    const input = ['nome','email']
-
-    console.log(byId(input[i]))
-
-
-      if(input.value == ""){
-        input.parentElement.setAttribute('data-error', 'Digite seu nome')
-    } else {
-        window.alert('FOi')
-    }
-    
-   
-
-    event.preventDefault()
-    
-}
- 
 
 </script>   
  

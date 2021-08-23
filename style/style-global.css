@@ -614,6 +614,69 @@ a.active-pagination {
   font-size: 18px;
 }
 
+/* OPÇÕES DO GERENCIAR USUARIO */
+.options-manage-users {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.options-manage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  margin-right: 30px;
+  color: #133C55;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 14px;
+}
+
+.options-manage > span {
+  margin-right: 10px;
+}
+
+/* DROPDOWN OPÇÕES DO GERENCIAR USUARIO */
+.dropdown-options-manage {
+  position: relative;
+  display: block;
+}
+
+.dropdown-options-manage span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  -webkit-box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  min-width: 220px;
+  word-wrap: normal;
+}
+
+.dropdown-content .options-manage {
+  margin: 0;
+}
+
+.dropdown-options-manage:hover .dropdown-content {
+  display: block;
+}
+
 /* BOTOES ESPECIAIS */
 .container-btn-add {
   display: -webkit-box;
@@ -652,7 +715,7 @@ a.active-pagination {
   pointer-events: none;
 }
 
-.material-icons.icon-black {
+.container-btn-add .icon-black {
   color: #606060;
   font-size: 18px;
 }
@@ -1144,5 +1207,13 @@ a.active-pagination {
 /* WIDTH 100% */
 .max-width {
   width: 100%;
+}
+
+/* NAO SELECIONAR OS ICONES*/
+.material-icons-round {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 /*# sourceMappingURL=style-global.css.map */
