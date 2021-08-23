@@ -65,6 +65,13 @@ h4 {
   transition: 0.5s;
 }
 
+.d-green {
+  background-color: #73D77D;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 .d-blue-out {
   background-color: #ffffff;
   border: 1px solid #00A4FF;
