@@ -72,10 +72,20 @@ h4 {
   transition: 0.5s;
 }
 
+.d-green:hover {
+  background-color: #84e68d;
+}
+
+.d-green:active {
+  background-color: #5cc567;
+}
+
 .d-blue-out {
   background-color: #ffffff;
   border: 1px solid #00A4FF;
   color: #00A4FF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-blue-out:hover {
@@ -90,6 +100,8 @@ h4 {
   background-color: #ffffff;
   border: 1px solid #606060;
   color: #606060;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-grey-out:hover {
@@ -103,6 +115,8 @@ h4 {
 .d-blue-blue {
   background-color: #DFF4FF;
   color: #00A4FF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-blue-blue:hover {
@@ -116,6 +130,8 @@ h4 {
 .d-red {
   background-color: #FF7B7B;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-red:hover {
@@ -130,6 +146,8 @@ h4 {
   background-color: #ffffff;
   border: 1px solid #FF7B7B;
   color: #FF7B7B;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-red-out:hover {
@@ -143,6 +161,8 @@ h4 {
 .d-grey {
   background-color: #EEEEEE;
   color: #606060;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-grey:hover {
@@ -156,6 +176,8 @@ h4 {
 .d-coral {
   background-color: #FF7E66;
   color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-coral:hover {
@@ -170,6 +192,8 @@ h4 {
   background-color: #ffffff;
   border: 1px solid #FF7E66;
   color: #FF7E66;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .d-coral-out:hover {
