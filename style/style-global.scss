@@ -206,7 +206,7 @@ h4 {
 .btn-default{
     padding: 0px 10px;
     height: 40px;
-    width: 200px;    
+    min-width: 200px;    
     border-radius: 7px;
     font-size: 18px;
     transition: 0.5s;
@@ -218,7 +218,7 @@ h4 {
 /* BUTTONS SMALL */
 .btn-small{
     height: 20px;
-    width: 100px;
+    min-width: 100px;
     font-size: 12px;
 }
 
@@ -239,7 +239,6 @@ h4 {
     color: $d-white; 
     transition: 0.5s;
 }
-
 
 
 /* INPUTS */
@@ -485,7 +484,7 @@ h4 {
     display: flex;
     align-items: center;
 }
-.select-default .material-icons{
+.select-default .icon-select{
     position: absolute;
     z-index: 1;
     right: 0;
@@ -503,6 +502,22 @@ h4 {
     margin-bottom: 5px;
 }
 
+.select-header-box{
+    height: 20px;
+    color: $d-blue-dark;
+    width: 150px;
+}
+.select-header-box > select{
+    font-size: 10px;
+    background-color: $d-white;
+    padding-left: 10px;
+}
+.select-header-box .icon-select {
+    color: $d-blue-dark;
+    margin-right: 5px;
+    font-size: 18px;
+}
+ 
 /* BOTOES ESPECIAIS */
 
 .container-btn-add{
@@ -737,6 +752,8 @@ margin-top: 20px;
     align-items: center;
     font-style: 14px;
     font-weight: 600;
+    display: flex;
+    justify-content: space-between;
 }
 .box-middle{
     margin-top: 0px;
@@ -886,6 +903,9 @@ margin-top: 20px;
 .container-header {
     width: 100%;
     margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .container-middle{
@@ -898,4 +918,13 @@ margin-top: 20px;
 }
 .container-bottom > .btn-default{
     margin-right: 45px;
+}
+
+
+
+
+
+/* WIDTH 100% */
+.max-width{
+    width: 100%;
 }
