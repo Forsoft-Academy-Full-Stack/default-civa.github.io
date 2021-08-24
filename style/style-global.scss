@@ -442,7 +442,13 @@ h4 {
     width: 100%;
 }
 /* PAGINATION */
-
+.container-pagination{
+    width: 100%;
+    display: flex;
+}
+.pagination-nav{
+    margin: 0px auto;
+}
 .pagination-nav a{
     float: left;
     width: 20px;

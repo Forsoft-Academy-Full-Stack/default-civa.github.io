@@ -521,6 +521,17 @@ h4 {
 }
 
 /* PAGINATION */
+.container-pagination {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagination-nav {
+  margin: 0px auto;
+}
+
 .pagination-nav a {
   float: left;
   width: 20px;
