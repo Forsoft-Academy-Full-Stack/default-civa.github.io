@@ -12,7 +12,20 @@ rel="stylesheet">
 
 
 <title>Validation form</title>
-
+<style>
+    textarea {
+padding: 10px;
+height: 120px;
+line-height: 1.5;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: none;
+margin-bottom: 50px;
+font-size: .8rem;
+letter-spacing: 1px;
+width: 100%;
+}
+</style>
 
 </head>
 <body id="container-manager">
@@ -104,7 +117,15 @@ rel="stylesheet">
 
 <input type="submit" value="Enviar" class="btn-default d-coral" id="btn-enviar">
 </form>
+<br>
 
+<p>Crie um arquivo js copie a estrutura abaixo, insira os ids dos inputs no Array e o id do formulario. A verificação só funcionará se o arquivo <b>check-form.js</b> estiver na pasta do seu arquivo.</p>
+<textarea>
+// INPUTS
+const elementsForm = ['#name-complet','#number-civa','#identity','#date-birth','#email','#contact','#adress','#country']
+// ID DO FORMULARIO
+const nameForm = '#form-panel-supervisor'
+</textarea>
 
 </div> 
 </div> 
