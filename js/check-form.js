@@ -1,6 +1,6 @@
 // RETORNA ELEMENTO EM OBJETO
 function getElement(element){
-    return document.getElementById(element)
+    return document.querySelector(element)
 }
 // EVENTO SUBMIT FORMULARIO
 getElement(nameForm).addEventListener('submit', checkForm)
@@ -12,13 +12,17 @@ function checkForm(event){
 
     if(getElement(elementsForm[num]).value == ''){
 
-            window.alert(`O campo ${getElement(elementsForm[num]).name} está vazio`)
+            getElement(elementsForm[num]).parentElement.setAttribute('data-error','Campo obrigatório!')
 
-    } else if((elementsForm.length-1) == num){
-            window.alert(`Formulario enviado com sucesso`)
-            break;
-            
+    } else {
+            getElement(elementsForm[num]).parentElement.removeAttribute('data-error')
         }
     }
        event.preventDefault()
 }
+
+
+/* if((elementsForm.length-1) == num){
+    window.alert('Cadastro enviado')
+    break;    
+} */

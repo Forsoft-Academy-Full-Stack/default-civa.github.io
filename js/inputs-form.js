@@ -1,4 +1,4 @@
 // INPUTS
-const elementsForm = ['name-complet','number-civa','identity','date-birth','email','contact','adress','country']
+const elementsForm = ['#name-complet','#number-civa','#identity','#date-birth','#email','#contact','#adress','#country']
 // ID DO FORMULARIO
-const nameForm = 'form-panel-supervisor'
+const nameForm = '#form-panel-supervisor'
