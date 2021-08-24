@@ -84,107 +84,6 @@ width: 100%;
 <div class="container-middle">
         <section class="space">
         
-            <div class="box-container">
-        
-        <div class="box-wrapper">
-        <!-- CONTAINER CABEÇALHO -->
-            <header class="box-header">Box com Formulario
-                <div class="input-container">
-                    <div class="select-default select-header-box">
-                      <select required>
-                          <option value="" selected disabled>Selecionar</option>
-                          <option value="1">Documento Nacional</option>
-                          <option value="2">Passaporte</option>
-                      </select>
-                      <span class="material-icons-round icon-select">expand_more</span>
-                    </div>
-                  </div>
-            </header>
-        
-        <!-- CONTAINER DO MEIO -->
-        <div class="box-middle box-middle-form">
-        
-            <div class="input-container">
-        
-                <label for="">Label</label>
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-            </div>
-        
-            <div class="input-container">
-                <label for="">Label</label>
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-            </div>
-        
-            <div class="input-container">
-                <label for="">Label</label>
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-            </div>
-        
-            <div class="input-container">
-                <label for="">Label</label>
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-            </div>
-        
-        </div>
-        
-        <!-- CONTAINER INFERIOR BOTOES -->
-            <div class="box-bottom">
-                <div class="toggle-container">
-                    <div class="toggle-btn">
-                        <div class="inner-circle"></div>
-                        <span class="toggle-name">Ativado</span>
-                    </div> 
-                    </div>
-                    <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
-                    <button class="btn-default btn-small d-red">Excluir</button>
-            </div>
-        </div>
-        
-         
-            <div class="box-wrapper">
-                <header class="box-header">Box com Tabela</header>
-                <div class="box-middle box-middle-table">
-                    <table class="table-default">
-                        <tr>
-                            <th>Nome</th>
-                            <th>Estado</th>
-                            <th>CP</th>
-                            <th>Identificador</th>
-                            
-                        </tr>
-                        <tr>
-                            <td>Hopital Pan</td>
-                            <td>Rio de Janeiro</td>
-                            <td>12016-102</td>
-                            <td>215648</td>
-                        </tr>
-                        <tr>
-                            <td>Hopital Pan</td>
-                            <td>Rio de Janeiro</td>
-                            <td>12016-102</td>
-                            <td>215648</td>
-                        </tr>
-                        <tr>
-                            <td>Hopital Pan</td>
-                            <td>Rio de Janeiro</td>
-                            <td>12016-102</td>
-                            <td>215648</td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div class="box-bottom">
-                        <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
-                        <button class="btn-default btn-small d-coral">Adicionar dose</button>
-                        <button class="btn-default btn-small d-green">Adicionar Certificado</button>
-                </div>
-        
-            </div>
-        
-        </div>
-        <p><b>.box-container</b> une os boxs, caso queira apenas um box delete o <b>.box-wrapper</b></p>
-        <textarea class="scroll-default">
-
             <!-- CONTAINER BOX'S -->
             <div class="box-container">
                 <!-- CONTAINER BOX LEFT FORM -->
@@ -204,8 +103,8 @@ width: 100%;
                           </div>
                     </header>
                 <!-- CONTAINER DO MEIO -->
-                <div class="box-middle box-middle-form">
-                
+                <form class="box-middle box-middle-form">
+                    
                     <div class="input-container">
                         <label for="">Label</label>
                         <input type="text" placeholder="Lorem Ipsum" class="input-default">
@@ -216,17 +115,9 @@ width: 100%;
                         <input type="text" placeholder="Lorem Ipsum" class="input-default">
                     </div>
                 
-                    <div class="input-container">
-                        <label for="">Label</label>
-                        <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                    </div>
+                    
                 
-                    <div class="input-container">
-                        <label for="">Label</label>
-                        <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                    </div>
-                
-                </div>
+                </form>
                 <!-- CONTAINER INFERIOR BOTOES -->
                     <div class="box-bottom">
                         <div class="toggle-container">
@@ -245,6 +136,7 @@ width: 100%;
                         <!-- CONTAINER CABEÇALHO -->
                         <header class="box-header">Box com Tabela</header>
                         <div class="box-middle box-middle-table">
+                            <!-- CONTAINER DO MEIO -->
                             <table class="table-default">
                                 <tr>
                                     <th>Nome</th>
@@ -270,15 +162,116 @@ width: 100%;
                                     <td>12016-102</td>
                                     <td>215648</td>
                                 </tr>
-                               
                             </table>
                             
                         </div>
-                       
-                
+                       <!-- CONTAINER INFERIOR BOTOES -->
+                        <div class="box-bottom">
+                           
+                                <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
+                                <button class="btn-default btn-small d-coral">Adicionar dose</button>
+                                <button class="btn-default btn-small d-green">Adicionar certificado</button>
+
+                        </div>
                     </div>
                 
                 </div>
+             
+        <p><b>.box-container</b> une os boxs, caso queira apenas um box delete o <b>.box-wrapper</b></p>
+        <textarea class="scroll-default">
+
+           <!-- CONTAINER BOX'S -->
+           <div class="box-container">
+            <!-- CONTAINER BOX LEFT FORM -->
+            <div class="box-wrapper">
+            <!-- CONTAINER CABEÇALHO -->
+                <header class="box-header">Box com Formulario
+                    <!-- SELECT HEADER BOX -->
+                    <div class="input-container">
+                        <div class="select-default select-header-box">
+                          <select required>
+                              <option value="" selected disabled>Selecionar</option>
+                              <option value="1">Documento Nacional</option>
+                              <option value="2">Passaporte</option>
+                          </select>
+                          <span class="material-icons-round icon-select">expand_more</span>
+                        </div>
+                      </div>
+                </header>
+            <!-- CONTAINER DO MEIO -->
+            <form class="box-middle box-middle-form">
+                
+                <div class="input-container">
+                    <label for="">Label</label>
+                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
+                </div>
+            
+                <div class="input-container">
+                    <label for="">Label</label>
+                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
+                </div>
+            
+                
+            
+            </form>
+            <!-- CONTAINER INFERIOR BOTOES -->
+                <div class="box-bottom">
+                    <div class="toggle-container">
+                        <div class="toggle-btn">
+                            <div class="inner-circle"></div>
+                            <span class="toggle-name">Ativado</span>
+                        </div> 
+                        </div>
+                        <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
+                        <button class="btn-default btn-small d-red">Excluir</button>
+                </div>
+            </div>
+            
+             <!-- CONTAINER BOX RIGHT TABLE-->
+                <div class="box-wrapper">
+                    <!-- CONTAINER CABEÇALHO -->
+                    <header class="box-header">Box com Tabela</header>
+                    <div class="box-middle box-middle-table">
+                        <!-- CONTAINER DO MEIO -->
+                        <table class="table-default">
+                            <tr>
+                                <th>Nome</th>
+                                <th>Estado</th>
+                                <th>CP</th>
+                                <th>Identificador</th>
+                            </tr>
+                            <tr>
+                                <td>Hopital Pan</td>
+                                <td>Rio de Janeiro</td>
+                                <td>12016-102</td>
+                                <td>215648</td>
+                            </tr>
+                            <tr>
+                                <td>Hopital Pan</td>
+                                <td>Rio de Janeiro</td>
+                                <td>12016-102</td>
+                                <td>215648</td>
+                            </tr>
+                            <tr>
+                                <td>Hopital Pan</td>
+                                <td>Rio de Janeiro</td>
+                                <td>12016-102</td>
+                                <td>215648</td>
+                            </tr>
+                        </table>
+                        
+                    </div>
+                   <!-- CONTAINER INFERIOR BOTOES -->
+                    <div class="box-bottom">
+                       
+                            <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
+                            <button class="btn-default btn-small d-coral">Adicionar dose</button>
+                            <button class="btn-default btn-small d-green">Adicionar certificado</button>
+
+                    </div>
+                </div>
+            
+            </div>
         </textarea>
 
         </section>

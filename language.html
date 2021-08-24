@@ -11,7 +11,21 @@
     <link rel="stylesheet" href="style/style-global.css">
     <title>language</title>
 
- 
+    <style>
+        textarea {
+padding: 10px;
+height: 400px;
+line-height: 1.5;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: none;
+margin-bottom: 50px;
+font-size: .8rem;
+letter-spacing: 1px;
+width: 100%;
+margin-top: 30px;
+}
+    </style>
 
 </head>
 <body id="container-manager">
@@ -52,10 +66,9 @@
  <div id="wrapper-main">
 
     <header class="container-header">
-        <h3>header</h3>
+        <h3>Linguagem</h3>
     </header>
-    <p class="container-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus.</p>    
-
+   
     <div class="container-middle">
 
         <div class="container-select-language">
@@ -66,18 +79,28 @@
         </div>
 
         <div class="select-language">
-        <h4>English</h4>
+            <h4>English</h4>
         </div>
 
-        </div>            
+        </div>
+
+        <textarea>
+            <!-- CONTAINER LANGUAGE -->
+            <div class="container-select-language">
+                <!-- ITENS SELECT -->
+                <div class="select-language">
+                    <h4>Português</h4>
+                    <span class="material-icons-round icon-green-check">check_circle</span> 
+                </div>
+        
+                <div class="select-language">
+                    <h4>English</h4>
+                </div>
+        
+            </div>
+        </textarea>
 
     </div>
-
-
-    <div class="container-bottom">
-        <button class="btn-default d-grey">Voltar</button>
-        <button class="btn-default d-coral">Alterar</button>
-    </div>  
 
  </div> 
 </div> 

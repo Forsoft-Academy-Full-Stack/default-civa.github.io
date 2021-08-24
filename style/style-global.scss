@@ -833,6 +833,9 @@ margin-top: 20px;
 }
 
 /* BOX WITH TABLE */
+.box-middle-table .table-default {
+    box-shadow: none;
+}
 .box-middle-table .table-default td, .box-middle-table .table-default th{
     font-size: 12px;
 }

@@ -1036,6 +1036,11 @@ a.active-pagination {
 }
 
 /* BOX WITH TABLE */
+.box-middle-table .table-default {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .box-middle-table .table-default td, .box-middle-table .table-default th {
   font-size: 12px;
 }
