@@ -14,15 +14,16 @@ function checkForm(event){
 
             getElement(elementsForm[num]).parentElement.setAttribute('data-error','Campo obrigatório!')
 
+    } else if((elementsForm.length-1) == num){
+
+        getElement(elementsForm[num]).parentElement.removeAttribute('data-error')
+
+        window.alert('formulario enviado com sucesso!')
+
     } else {
             getElement(elementsForm[num]).parentElement.removeAttribute('data-error')
         }
     }
+
        event.preventDefault()
 }
-
-
-/* if((elementsForm.length-1) == num){
-    window.alert('Cadastro enviado')
-    break;    
-} */

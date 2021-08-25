@@ -13,18 +13,4 @@ langaguePT.onclick = event => {
 langagueEN.onclick = event => {
     langagueEN.children[1].style.display = 'initial'
     langaguePT.children[1].style.display = 'none'
-   }  
-
-   /*     
-   
-   btnToggle.classList.toggle('active-toggle')
-   
-    if(btnToggle.classList == 'toggle-btn'){
-   
-        toggleName.textContent = 'Ativado' 
-   
-    }  else { 
-   
-    toggleName.textContent = 'Desativado'
-   
-   } */
+   } 
