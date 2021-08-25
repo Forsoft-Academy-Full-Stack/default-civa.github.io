@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" href="img/favicon-gs.svg" type="image/x-icon">
     <!-- ICONES -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
@@ -71,33 +71,34 @@ margin-top: 30px;
    
     <div class="container-middle">
 
-        <div class="container-select-language">
-        
-        <div class="select-language">
-         <h4>Português</h4>
-         <span class="material-icons-round icon-green-check">check_circle</span> 
-        </div>
-
-        <div class="select-language">
-            <h4>English</h4>
-        </div>
-
+         <!-- CONTAINER LANGUAGE -->
+         <div class="container-select-language">
+            <!-- ITENS SELECT -->
+            <div class="select-language" id="change-langague" langague='portugues'>
+                <h4>Português</h4>
+                <span class="material-icons-round icon-green-check" id="icon-check-language">check_circle</span> 
+            </div>
+    
+            <div class="select-language" id="change-langague" langague='english'>
+                <h4>English</h4>
+                <span class="material-icons-round icon-green-check" id="icon-check-language" style="display: none;">check_circle</span>
+            </div>
         </div>
 
         <textarea>
-            <!-- CONTAINER LANGUAGE -->
-            <div class="container-select-language">
-                <!-- ITENS SELECT -->
-                <div class="select-language">
-                    <h4>Português</h4>
-                    <span class="material-icons-round icon-green-check">check_circle</span> 
-                </div>
-        
-                <div class="select-language">
-                    <h4>English</h4>
-                </div>
-        
+     <!-- CONTAINER LANGUAGE -->
+         <div class="container-select-language">
+            <!-- ITENS SELECT -->
+            <div class="select-language" id="change-langague" langague='portugues'>
+                <h4>Português</h4>
+                <span class="material-icons-round icon-green-check" id="icon-check-language">check_circle</span> 
             </div>
+    
+            <div class="select-language" id="change-langague" langague='english'>
+                <h4>English</h4>
+                <span class="material-icons-round icon-green-check" id="icon-check-language" style="display: none;">check_circle</span>
+            </div>
+        </div>
         </textarea>
 
     </div>
@@ -107,7 +108,7 @@ margin-top: 30px;
 
  
      
- 
+ <script src="js/change-language.js"></script>
 
 </body>
 </html>

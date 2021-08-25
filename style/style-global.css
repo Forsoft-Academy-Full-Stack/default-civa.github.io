@@ -909,7 +909,19 @@ a.active-pagination {
   margin-bottom: 10px;
 }
 
-.container-faq > .wrapper-faq > .icon-faq {
+.details-faq[open] > summary {
+  color: #FF7E66;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.details-faq[open] > summary p {
+  color: #FF7E66;
+  -webkit-transition: 0.5;
+  transition: 0.5;
+}
+
+.icon-faq {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,7 +931,7 @@ a.active-pagination {
           align-items: center;
 }
 
-.wrapper-faq > p {
+.details-faq > p {
   text-align: justify;
 }
 
@@ -930,10 +942,7 @@ a.active-pagination {
 .icon-faq > p {
   font-size: 18px;
   margin-right: 5px;
-}
-
-.icon-faq.active-icon-faq > p {
-  color: #FF7E66;
+  cursor: pointer;
 }
 
 .icon-faq .material-icons-round {

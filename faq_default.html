@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="shortcut icon" href="img/favicon-gs.svg" type="image/x-icon">
     <!-- ICONES -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
     rel="stylesheet">
@@ -74,52 +74,64 @@ margin-top: 30px;
 
     <div class="container-middle">
 
-        <!-- CONTAINER FAQ -->
-        <div class="container-faq">
-            <!-- FAQ ITENS -->
-            <div class="wrapper-faq">
-            <!-- FAQ ACTIVE -->
-                <span class="icon-faq active-icon-faq"><p>Faq1</p><span class="material-icons-round">expand_less</span></span>
-                <h4>Lorem ipsum</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
-            </div>
-            <div class="wrapper-faq">
-                <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-            </div>
-            <div class="wrapper-faq">
-                <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-            </div>
-            <div class="wrapper-faq">
-                <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-            </div>
-            <div class="wrapper-faq">
-                <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-            </div>
-        </div>
 
-<textarea class="scroll-default">
- <!-- CONTAINER FAQ -->
- <div class="container-faq">
-    <!-- FAQ ITENS -->
-    <div class="wrapper-faq">
-    <!-- FAQ ACTIVE -->
-        <span class="icon-faq active-icon-faq"><p>Faq1</p><span class="material-icons-round">expand_less</span></span>
+<!-- CONTAINER FAQ -->
+<div class="container-faq">
+<!-- FAQ ITENS -->
+<div class="wrapper-faq">
+    <details class="details-faq" open>
+        <summary class="icon-faq" id="summary-faq"><p>Faq1</p><span class="material-icons-round">expand_less</span></summary>
         <h4>Lorem ipsum</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+    </details>
+</div>
+<!-- FAQ ITENS -->
+<div class="wrapper-faq">
+        <details class="details-faq">
+            <summary class="icon-faq" id="summary-faq"><p>Faq2</p><span class="material-icons-round">expand_more</span></summary>
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+        </details>
     </div>
-    <div class="wrapper-faq">
-        <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-    </div>
-    <div class="wrapper-faq">
-        <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-    </div>
-    <div class="wrapper-faq">
-        <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
-    </div>
-    <div class="wrapper-faq">
-        <span class="icon-faq"><p>Faq1</p><span class="material-icons-round">expand_more</span></span>
+<!-- FAQ ITENS -->
+<div class="wrapper-faq">
+        <details class="details-faq">
+            <summary class="icon-faq" id="summary-faq"><p>Faq3</p><span class="material-icons-round">expand_more</span></summary>
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+        </details>
     </div>
 </div>
+
+<textarea class="scroll-default">
+
+<!-- CONTAINER FAQ -->
+<div class="container-faq">
+    <!-- FAQ ITENS -->
+    <div class="wrapper-faq">
+        <details class="details-faq" open>
+            <summary class="icon-faq" id="summary-faq"><p>Faq1</p><span class="material-icons-round">expand_less</span></summary>
+            <h4>Lorem ipsum</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+        </details>
+    </div>
+    <!-- FAQ ITENS -->
+    <div class="wrapper-faq">
+            <details class="details-faq">
+                <summary class="icon-faq" id="summary-faq"><p>Faq2</p><span class="material-icons-round">expand_more</span></summary>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+            </details>
+        </div>
+    <!-- FAQ ITENS -->
+    <div class="wrapper-faq">
+            <details class="details-faq">
+                <summary class="icon-faq" id="summary-faq"><p>Faq3</p><span class="material-icons-round">expand_more</span></summary>
+                <h4>Lorem ipsum</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum quis nemo harum! Accusamus eligendi tenetur laborum itaque, blanditiis doloribus tempore temporibus non dolore placeat, unde beatae, quae debitis alias dicta?</p>
+            </details>
+        </div>
+    </div>
 </textarea>
 
     </div>
@@ -127,5 +139,6 @@ margin-top: 30px;
  </div> 
 </div> 
 
+<script src="js/faq-func.js"></script>
 </body>
 </html>
