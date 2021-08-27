@@ -82,6 +82,8 @@ width: 100%;
 </div>
 
 <div class="container-middle">
+
+    
         <section class="space">
         
             <!-- CONTAINER BOX'S -->
@@ -103,19 +105,16 @@ width: 100%;
                           </div>
                     </header>
                 <!-- CONTAINER DO MEIO -->
-                <form class="box-middle box-middle-form">
+                <form class="box-middle box-middle-form scroll-default">
                     
                     <div class="input-container">
                         <label for="">Label</label>
                         <input type="text" placeholder="Lorem Ipsum" class="input-default">
                     </div>
-                
                     <div class="input-container">
                         <label for="">Label</label>
                         <input type="text" placeholder="Lorem Ipsum" class="input-default">
                     </div>
-                
-                    
                 
                 </form>
                 <!-- CONTAINER INFERIOR BOTOES -->
@@ -135,15 +134,18 @@ width: 100%;
                     <div class="box-wrapper">
                         <!-- CONTAINER CABEÇALHO -->
                         <header class="box-header">Box com Tabela</header>
-                        <div class="box-middle box-middle-table">
+                        <div class="box-middle box-middle-table scroll-default">
                             <!-- CONTAINER DO MEIO -->
                             <table class="table-default">
+                              <thead>
                                 <tr>
                                     <th>Nome</th>
                                     <th>Estado</th>
                                     <th>CP</th>
                                     <th>Identificador</th>
                                 </tr>
+                              </thead>
+                              <tbody>
                                 <tr>
                                     <td>Hopital Pan</td>
                                     <td>Rio de Janeiro</td>
@@ -162,6 +164,7 @@ width: 100%;
                                     <td>12016-102</td>
                                     <td>215648</td>
                                 </tr>
+                            </tbody>
                             </table>
                             
                         </div>
@@ -180,294 +183,510 @@ width: 100%;
         <p><b>.box-container</b> une os boxs, caso queira apenas um box delete o <b>.box-wrapper</b></p>
         <textarea class="scroll-default">
 
-           <!-- CONTAINER BOX'S -->
-           <div class="box-container">
-            <!-- CONTAINER BOX LEFT FORM -->
-            <div class="box-wrapper">
-            <!-- CONTAINER CABEÇALHO -->
-                <header class="box-header">Box com Formulario
-                    <!-- SELECT HEADER BOX -->
-                    <div class="input-container">
-                        <div class="select-default select-header-box">
-                          <select required>
-                              <option value="" selected disabled>Selecionar</option>
-                              <option value="1">Documento Nacional</option>
-                              <option value="2">Passaporte</option>
-                          </select>
-                          <span class="material-icons-round icon-select">expand_more</span>
-                        </div>
-                      </div>
-                </header>
-            <!-- CONTAINER DO MEIO -->
-            <form class="box-middle box-middle-form">
-                
-                <div class="input-container">
-                    <label for="">Label</label>
-                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                </div>
-            
-                <div class="input-container">
-                    <label for="">Label</label>
-                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                </div>
-            
-                
-            
-            </form>
-            <!-- CONTAINER INFERIOR BOTOES -->
-                <div class="box-bottom">
-                    <div class="toggle-container">
-                        <div class="toggle-btn">
-                            <div class="inner-circle"></div>
-                            <span class="toggle-name">Ativado</span>
-                        </div> 
-                        </div>
-                        <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
-                        <button class="btn-default btn-small d-red">Excluir</button>
-                </div>
-            </div>
-            
-             <!-- CONTAINER BOX RIGHT TABLE-->
-                <div class="box-wrapper">
-                    <!-- CONTAINER CABEÇALHO -->
-                    <header class="box-header">Box com Tabela</header>
-                    <div class="box-middle box-middle-table">
-                        <!-- CONTAINER DO MEIO -->
-                        <table class="table-default">
-                            <tr>
-                                <th>Nome</th>
-                                <th>Estado</th>
-                                <th>CP</th>
-                                <th>Identificador</th>
-                            </tr>
-                            <tr>
-                                <td>Hopital Pan</td>
-                                <td>Rio de Janeiro</td>
-                                <td>12016-102</td>
-                                <td>215648</td>
-                            </tr>
-                            <tr>
-                                <td>Hopital Pan</td>
-                                <td>Rio de Janeiro</td>
-                                <td>12016-102</td>
-                                <td>215648</td>
-                            </tr>
-                            <tr>
-                                <td>Hopital Pan</td>
-                                <td>Rio de Janeiro</td>
-                                <td>12016-102</td>
-                                <td>215648</td>
-                            </tr>
-                        </table>
-                        
-                    </div>
-                   <!-- CONTAINER INFERIOR BOTOES -->
-                    <div class="box-bottom">
-                       
-                            <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
-                            <button class="btn-default btn-small d-coral">Adicionar dose</button>
-                            <button class="btn-default btn-small d-green">Adicionar certificado</button>
+<!-- CONTAINER BOX'S --> 
+<div class="box-container">
+<!-- CONTAINER BOX LEFT FORM -->
+    <div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO -->
+        <header class="box-header">Box com Formulario
 
-                    </div>
-                </div>
-            
+            <!-- SELECT HEADER BOX -->
+            <div class="input-container">
+            <div class="select-default select-header-box">
+            <select required>
+            <option value="" selected disabled>Selecionar</option>
+            <option value="1">Documento Nacional</option>
+            <option value="2">Passaporte</option>
+            </select>
+            <span class="material-icons-round icon-select">expand_more</span>
             </div>
+            </div>
+
+        </header>
+        <!-- CONTAINER DO MEIO -->
+        <form class="box-middle box-middle-form scroll-default">
+
+            <div class="input-container">
+            <label for="">Label</label>
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+            <label for="">Label</label>
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+
+        </form>
+<!-- CONTAINER INFERIOR BOTOES -->
+        <div class="box-bottom">
+            <div class="toggle-container">
+            <div class="toggle-btn">
+            <div class="inner-circle"></div>
+            <span class="toggle-name">Ativado</span>
+            </div> 
+            </div>
+            <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir          senha</button>
+            <button class="btn-default btn-small d-red">Excluir</button>
+        </div>
+    </div>
+
+    <!-- CONTAINER BOX RIGHT TABLE-->
+    <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO -->
+        <header class="box-header">Box com Tabela</header>
+
+         <!-- CONTAINER DO MEIO -->
+        <div class="box-middle box-middle-table scroll-default">
+
+            <table class="table-default">
+            <thead>
+            <tr>
+            <th>Nome</th>
+            <th>Estado</th>
+            <th>CP</th>
+            <th>Identificador</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+            <td>Hopital Pan</td>
+            <td>Rio de Janeiro</td>
+            <td>12016-102</td>
+            <td>215648</td>
+            </tr>
+            <tr>
+            <td>Hopital Pan</td>
+            <td>Rio de Janeiro</td>
+            <td>12016-102</td>
+            <td>215648</td>
+            </tr>
+            <tr>
+            <td>Hopital Pan</td>
+            <td>Rio de Janeiro</td>
+            <td>12016-102</td>
+            <td>215648</td>
+            </tr>
+            </tbody>
+            </table>
+
+        </div>
+        <!-- CONTAINER INFERIOR BOTOES -->
+        <div class="box-bottom">
+
+            <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
+            <button class="btn-default btn-small d-coral">Adicionar dose</button>
+            <button class="btn-default btn-small d-green">Adicionar certificado</button>
+
+        </div>
+    </div>
+
+</div>
         </textarea>
 
         </section>
         
         <section class="space">
         
-            <div class="box-container">
-            <div class="box-wrapper">
-                <header class="box-header">
-                   Config País
-                </header>
-                <div class="box-middle box-middle-form"> 
-        
-                    <div class="input-container">
-                    <label for="">Label</label>
-                    <div class="container-btn-add">
-                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                    <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
-                </div>
-                </div>
-            
-                <div class="input-container">
-                    <label for="">Label</label>
-                    <div class="container-btn-add">
-                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                    <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
-                    <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
-                </div>
-                </div>   
-            
+ 
+ 
+<div class="box-container">
+    <!-- CONTAINER BOX LEFT FORM --> 
+    <div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+        Config País
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-middle-form scroll-default"> 
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+        </div>
+        </div>   
+
+    </div>
+
+</div>
+
+
+    <!-- CONTAINER BOX RIGHT TABLE --> 
+    <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO --> 
+        <header class="box-header">
+            Gerenciamento de subdivisão
+        </header>
+        <!-- CONTAINER DO MEIO -->
+        <div class="box-middle box-config-region">
+
+        <div class="legend-box-region">Região</div>
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+        <div class="search-wrap">
+        <div class="search-box">
+        <input type="text" placeholder="Pesquisar usuario">
+        <div class="btn-common d-coral">
+        <span class="material-icons-round ">search</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="size-table-country-large scroll-default">
+            <table class="table-default table-config-country">
+            <tbody>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral">Editar</button></td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<textarea class="scroll-default">
+    <div class="box-container">
+        <!-- CONTAINER BOX LEFT FORM --> 
+        <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO --> 
+        <header class="box-header">
+    
+            Config País
+    
+        </header>
+        <!-- CONTAINER DO MEIO -->
+        <div class="box-middle box-middle-form scroll-default"> 
+    
+            <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
             </div>
+            </div>
+    
+            <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+            <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+            </div>
+            </div>   
+    
+        </div>
+    
+    </div>
+    
+    
+        <!-- CONTAINER BOX RIGHT TABLE --> 
+        <div class="box-wrapper">
+            <!-- CONTAINER CABEÇALHO --> 
+            <header class="box-header">
+                Gerenciamento de subdivisão
+            </header>
+            <!-- CONTAINER DO MEIO -->
+            <div class="box-middle box-config-region">
+    
+            <div class="legend-box-region">Região</div>
+    
+            <div class="input-container">
+            <label for="">Label</label>
+            <div class="container-btn-add">
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+            </div>
+            </div>
+    
+            <div class="search-wrap">
+            <div class="search-box">
+            <input type="text" placeholder="Pesquisar usuario">
+            <div class="btn-common d-coral">
+            <span class="material-icons-round ">search</span>
+            </div>
+            </div>
+            </div>
+    
+            <div class="size-table-country-large scroll-default">
+                <table class="table-default table-config-country">
+                <tbody>
+                <tr>
+                <td>Sudeste</td>
+                <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                <td>Sudeste</td>
+                <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                <tr>
+                <td>Sudeste</td>
+                <td><button class="btn-default btn-small d-coral">Editar</button></td>
+                <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                </tr>
+                </tbody>
+                </table>
+            </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+</textarea>
+</section>
+
+
+
+
+
+
+
+
+<section class="space">
+
+
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="select-default max-width">
+        <select required>
+        <option value="" selected disabled>Selecionar</option>
+        <option value="1">Subregião 1</option>
+        <option value="2">Subregião 2</option>
+        <option value="3">Subregião 3</option>
+        </select>
+        <span class="material-icons-round icon-select">expand_more</span>
+        </div>
+        </div>                    
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+        <div class="search-wrap">
+        <div class="search-box">
+        <input type="text" placeholder="Pesquisar usuario">
+        <div class="btn-common d-coral">
+        <span class="material-icons-round ">search</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="size-table-country-small scroll-default">
+        <table class="table-default table-config-country">
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        </table>
+        </div>
+
+    </div>
+</div>
+
+<textarea class="scroll-default" style="margin-top: 30px;">
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="select-default max-width">
+        <select required>
+        <option value="" selected disabled>Selecionar</option>
+        <option value="1">Subregião 1</option>
+        <option value="2">Subregião 2</option>
+        <option value="3">Subregião 3</option>
+        </select>
+        <span class="material-icons-round icon-select">expand_more</span>
+        </div>
+        </div>                    
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+        <div class="search-wrap">
+        <div class="search-box">
+        <input type="text" placeholder="Pesquisar usuario">
+        <div class="btn-common d-coral">
+        <span class="material-icons-round ">search</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="size-table-country-small scroll-default">
+        <table class="table-default table-config-country">
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral">Editar</button></td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        </table>
+        </div>
+
+    </div>
+</div>
+</textarea>
+</section> 
+        
          
-            </div>
-            
-            <div class="box-wrapper">
-                <header class="box-header">
-                    Gerenciamento de subdivisão
-                </header>
-        
-            <div class="box-middle box-config-region">
-        
-                <div class="legend-box-region">Região</div>
-        
-        
-            <div class="input-container">
-                <label for="">Label</label>
-                <div class="container-btn-add">
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
-            </div>
-            </div>
-        
-            <div class="search-wrap">
-            <div class="search-box">
-            <input type="text" placeholder="Pesquisar usuario">
-            <div class="btn-common d-coral">
-            <span class="material-icons-round ">search</span>
-            </div>
-            </div>
-            </div>
-        
-           
-                    <table class="table-default table-config-country">
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                     
-                    </table>
-        
-            
-        
-                </div>
-            </div>
-        
-        
-        
-        
-            <div class="box-wrapper">
-                <header class="box-header">
-                    Gerenciamento de subdivisão
-                </header>
-        
-            <div class="box-middle box-config-region">
-        
-                <div class="input-container">
-                    <label for="">Label</label>
-                    <div class="container-btn-add">
-                    <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                    <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
-                </div>
-                </div>
-        
-        
-            <div class="input-container">
-                <label for="">Label</label>
-                <div class="container-btn-add">
-                <input type="text" placeholder="Lorem Ipsum" class="input-default">
-                <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
-            </div>
-            </div>
-        
-            <div class="search-wrap">
-            <div class="search-box">
-            <input type="text" placeholder="Pesquisar usuario">
-            <div class="btn-common d-coral">
-            <span class="material-icons-round ">search</span>
-            </div>
-            </div>
-            </div>
-        
-           
-                    <table class="table-default table-config-country">
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                        <tr>
-                            <td>Sudeste</td>
-                            <td><button class="btn-default btn-small d-coral">Editar</button></td>
-                            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
-                        </tr>
-                     
-                    </table>
-        
-            
-        
-                </div>
-            </div>
-        
-        
-        
-        
-            
-            </div>
-            
-        
-        
-            </section>
         
         
 </div>
@@ -482,6 +701,7 @@ width: 100%;
 
 
 <script src="js/toggle-botton.js"></script>  
+
 
 </body>
 </html>

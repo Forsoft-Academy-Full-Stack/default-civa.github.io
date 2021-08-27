@@ -439,7 +439,7 @@ h4 {
 
 .search-box > input {
   position: absolute;
-  top: 0;
+  top: 1px;
   left: 0;
   height: 38px;
   width: 73%;
@@ -501,8 +501,42 @@ h4 {
   font-weight: 500;
 }
 
-.table-default tr:nth-child(even) {
+.table-default > tbody > tr:nth-child(odd) {
   background-color: #F2F2F2;
+}
+
+/* BOX WITH TABLE */
+.box-middle-table .table-default {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.box-middle-table .table-default td, .box-middle-table .table-default th {
+  font-size: 12px;
+}
+
+.box-middle-table .table-default td:first-child {
+  padding-left: 19px;
+}
+
+.box-middle-table .table-default td:last-child {
+  padding-right: 19px;
+}
+
+.box-middle-table .table-default th:first-child {
+  padding-left: 19px;
+}
+
+.box-middle-table .table-default th:last-child {
+  padding-right: 19px;
+}
+
+.box-middle-table .table-default thead th {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: white;
 }
 
 /* TABELA CONFIG PAIS BOX */
@@ -518,6 +552,19 @@ h4 {
 
 .table-default.table-config-country td:nth-child(1) {
   width: 100%;
+}
+
+.table-default.table-config-country > tbody > tr:nth-child(odd) {
+  background: none;
+}
+
+/* TAMANHO TABELA CONFIG REGION */
+.size-table-country-large {
+  height: 318px;
+}
+
+.size-table-country-small {
+  height: 290px;
 }
 
 /* PAGINATION */
@@ -680,6 +727,7 @@ a.active-pagination {
   padding: 5px;
   min-width: 220px;
   word-wrap: normal;
+  z-index: 100;
 }
 
 .dropdown-content .options-manage {
@@ -739,7 +787,7 @@ a.active-pagination {
 
 /* SCROLL DEFAULT */
 .scroll-default {
-  overflow-y: scroll;
+  overflow: auto;
 }
 
 .scroll-default::-webkit-scrollbar-thumb {
@@ -753,7 +801,7 @@ a.active-pagination {
   width: 9px;
 }
 
-/* DEFAULT MODAL ------------------------------ */
+/* MENU DEFAULT ------------------------------ */
 /* FOTO PERFIL */
 .photo-profile {
   height: 100px;
@@ -1044,33 +1092,11 @@ a.active-pagination {
   margin-bottom: 15px;
 }
 
-/* BOX WITH TABLE */
-.box-middle-table .table-default {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
-.box-middle-table .table-default td, .box-middle-table .table-default th {
-  font-size: 12px;
-}
-
-.box-middle-table .table-default td:first-child {
-  padding-left: 19px;
-}
-
-.box-middle-table .table-default td:last-child {
-  padding-right: 19px;
-}
-
-.box-middle-table .table-default th:first-child {
-  padding-left: 19px;
-}
-
-.box-middle-table .table-default th:last-child {
-  padding-right: 19px;
-}
-
 /* CONFIG TABLE WITH REGION */
+.box-config-region {
+  height: 500px;
+}
+
 .box-config-region .legend-box-region {
   border-bottom: 1px solid #dfdfdf;
   height: 50px;
@@ -1095,7 +1121,7 @@ a.active-pagination {
 
 /* DEFAULT MODAL ------------------------------ */
 /* MODAL */
-#container-modal {
+.container-modal {
   background-color: rgba(0, 0, 0, 0.3);
   width: 100%;
   height: 100vh;

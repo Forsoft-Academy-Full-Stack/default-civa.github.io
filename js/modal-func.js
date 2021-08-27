@@ -1,5 +1,5 @@
     // CHAMAR MODAL
-    const modalcontainer = document.querySelector('#container-modal')
+    const modalcontainer = document.querySelector('.container-modal')
     const modalbtnclose = document.querySelectorAll('#modalclose')
     const modalbtnopen = document.querySelector('#modalopen')
 
