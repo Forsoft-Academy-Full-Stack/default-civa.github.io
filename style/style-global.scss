@@ -42,9 +42,10 @@ $d-green-light: #00FF9A;
 /* COMPONENTES ----------------------------------- */
 
 /* PADRONIZAÇÃO FONTS */
+a{color: $d-blue-dark;}
 
 p{
-    font-size: 14px;
+    font-size: 16px;
     color: $d-blue-dark;
 }
 
@@ -221,10 +222,13 @@ h4 {
     min-width: 100px;
     font-size: 12px;
 }
+.btn-medium{
+    min-width: 150px;
+}
 
 /* BUTTON TABLE */
 .btn-table-manage{
-    font-size: 12px;
+    font-size: 14px;
     border: 1px solid $d-grey;
     color: $d-grey;
     padding: 0px 7px;
@@ -248,7 +252,7 @@ h4 {
     flex-direction: column;
 }
 .input-container > label{
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     margin-bottom: 5px;
 }
@@ -256,7 +260,7 @@ h4 {
     height: 40px;
     width: 200px;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid #DFDFDF;
     padding-left:  14px ;
     padding-right:  14px ;
@@ -264,7 +268,7 @@ h4 {
 }
 .input-default::placeholder{
     color: #B5B5B5;
-    font-size: 14px;
+    font-size: 16px;
  
 }
 .input-container:not(.input-container[data-error])  .input-default:focus{
@@ -297,7 +301,7 @@ h4 {
 
 /* TOGGLE BUTTON */
 .toggle-btn{
-    width: 100px;
+    width: 110px;
     height: 20px;
     background-color: $d-green;
     border-radius: 30px; 
@@ -312,7 +316,7 @@ h4 {
     color: $d-white;
     font-weight: 500;
     user-select: none;
-    font-size: 10px; 
+    font-size: 12px; 
 }
 .inner-circle{
     width: 13px;
@@ -328,7 +332,7 @@ h4 {
     transition: 0.5s;
 }
 .toggle-btn.toggle-btn.active-toggle > .inner-circle{
-    margin-left: 83px;
+    margin-left: 94px;
     transition: 0.5s;
 }
 /* MENU DE NAVEGAÇÃO */
@@ -348,7 +352,6 @@ h4 {
     color: $d-blue-dark;
     opacity: 0.4;
 }
-/* $d-blue-dark */
 .active-menu-nav{
     border-bottom: 3px solid $d-coral;
 }
@@ -361,7 +364,14 @@ h4 {
 .menu-nav li:hover:not(.active-menu-nav){
     border-bottom: 3px solid #ff7d667a;
 }
-
+.container-rodapé-menu a{
+    color: $d-white;
+    font-size: 14px;
+}
+.container-rodapé-menu{
+    text-align: center;
+    margin: 10px 0px;
+}
 /* BARRA PESQUISAR */
 
 .search-box{
@@ -379,7 +389,7 @@ h4 {
     height: 38px;
     width: 73%;
     border-radius: 7px;
-    font-size: 14px;
+    font-size: 16px;
     padding-left: 14px;
 }
 
@@ -416,7 +426,7 @@ h4 {
 .table-default td, .table-default th {
     text-align: left;
     padding: 0px 8px;
-    font-size: 14px;
+    font-size: 16px;
     height: 40px;
     user-select: none;
     color: $d-blue-dark;
@@ -433,7 +443,7 @@ h4 {
     box-shadow: none;
 }
 .box-middle-table .table-default td, .box-middle-table .table-default th{
-    font-size: 12px;
+    font-size: 14px;
 }
 .box-middle-table .table-default td:first-child{
     padding-left: 19px;
@@ -489,7 +499,7 @@ h4 {
 .pagination-nav a{
     float: left;
     width: 20px;
-    font-size: 14px;
+    font-size: 15px;
     user-select: none;
     font-weight: 500;
     margin: 0px 7.5px;
@@ -550,12 +560,14 @@ h4 {
 .select-header-box{
     height: 20px;
     color: $d-blue-dark;
-    width: 150px;
+    width: 200px;
 }
 .select-header-box > select{
-    font-size: 10px;
+    font-size: 13px;
     background-color: $d-white;
     padding-left: 10px;
+    display: flex;
+    justify-content: center;
 }
 .select-header-box .icon-select {
     color: $d-blue-dark;
@@ -689,6 +701,7 @@ h4 {
 .menu-sidebar{
 margin-left: 10px;
 margin-top: 20px;
+height: 100%;
 }
 
 .item-menu{
@@ -950,6 +963,8 @@ margin-top: 20px;
     background-color: $d-white;
 }
 
+
+
 /* MENU  */
 
 #container-manager #container-menu{
@@ -959,6 +974,8 @@ margin-top: 20px;
     position: fixed;
     width: 231px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 /* CONTEUDO PRINCIPAL */
@@ -1001,6 +1018,89 @@ margin-top: 20px;
 
 
 
+
+/* DEFAULT LAYOUT LOGIN ------------------------------ */
+
+/* LAYOUT LOGIN */
+
+#container-manager-initial{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+#container-main-initial{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+.wrapper-main-initial{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container-box-left{
+    width: 450px;
+    padding-right: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container-box-right{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+}
+.container-box-right > img{
+    width: 700px;
+}
+.container-rodapé-initial{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containers-wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+ 
+}
+
+/* LAYOUT INITIAL LOGIN */
+.box-form-initial {
+    padding: 15px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.box-form-initial > .input-container{
+    margin-bottom: 15px;
+}
+
+/* CIMA FORMULARIO INICIAL */
+.wrapper-top-initial p{
+    margin: 10px 0;
+}
+.login-initial{
+    font-weight: 500;
+}
+.initial-forgot-password{
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+}
+
+/* BAIXO FORMULARIO INICIAL */
+.wrapper-bottom-initial{
+    text-align: center;
+}
+.wrapper-bottom-initial a{
+    color: $d-coral;
+}
 
 
 /* WIDTH 100% */
