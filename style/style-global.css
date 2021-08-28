@@ -1081,6 +1081,10 @@ a.active-pagination {
   width: 100%;
 }
 
+.box-middle-max {
+  height: 500px;
+}
+
 .box-bottom {
   width: 100%;
   height: 40px;
@@ -1284,7 +1288,7 @@ a.active-pagination {
   width: 100%;
 }
 
-.container-bottom > .btn-default {
+.container-bottom > a, .container-bottom > .btn-default {
   margin-right: 45px;
 }
 
