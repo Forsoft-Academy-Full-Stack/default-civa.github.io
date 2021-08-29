@@ -367,6 +367,9 @@ h4 {
 .container-rodapé-menu a{
     color: $d-white;
     font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .container-rodapé-menu{
     text-align: center;
