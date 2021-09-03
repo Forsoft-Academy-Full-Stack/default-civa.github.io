@@ -275,6 +275,7 @@ h4 {
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 5px;
+  color: #133C55;
 }
 
 .input-default {
@@ -286,6 +287,7 @@ h4 {
   padding-left: 14px;
   padding-right: 14px;
   position: relative;
+  color: #133C55;
 }
 
 .input-default::-webkit-input-placeholder {
