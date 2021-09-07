@@ -315,11 +315,6 @@ h4 {
   padding-left: 13px;
 }
 
-.input-container:not(.input-container[data-error]) .input-default.input-blue:focus {
-  border: 2px solid #00A4FF;
-  padding-left: 13px;
-}
-
 .input-default:disabled {
   background-color: #E8E8E8;
 }
@@ -328,6 +323,21 @@ h4 {
   border: 2px solid #D93025;
   color: #133C55;
   background-color: #fff3f2;
+}
+
+/* INPUT NUMBER CELL PHONE */
+.input-number-ddi {
+  width: 55px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.input-container:not(.input-container[data-error]) .input-default.input-number-ddi:focus {
+  padding-left: 9px;
+}
+
+.input-number-cel {
+  width: 140px;
 }
 
 /* MENSAGEM DE ERRO INPUT */
@@ -436,7 +446,7 @@ h4 {
   border-bottom: 3px solid #ff7d667a;
 }
 
-.container-rodapé-menu a {
+.container-rodape-menu a {
   color: #ffffff;
   font-size: 14px;
   display: -webkit-box;
@@ -450,7 +460,11 @@ h4 {
           justify-content: center;
 }
 
-.container-rodapé-menu {
+.container-rodape-menu img {
+  margin-right: 5px;
+}
+
+.container-rodape-menu {
   text-align: center;
   margin: 10px 0px;
 }
@@ -684,6 +698,23 @@ a.active-pagination {
   margin-bottom: 5px;
 }
 
+/* INPUT NUMBER CELL PHONE */
+.container-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-street {
+  width: 125px;
+}
+
+.input-address {
+  width: 70px;
+  margin-right: 5px;
+}
+
+/* SELECT HEADER */
 .select-header-box {
   height: 20px;
   color: #133C55;
@@ -1372,7 +1403,7 @@ a.active-pagination {
   width: 700px;
 }
 
-.container-rodapé-initial {
+.container-rodape-initial {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1382,6 +1413,19 @@ a.active-pagination {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.container-rodape-page a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-rodape-page img {
+  margin-right: 5px;
 }
 
 .containers-wrapper {

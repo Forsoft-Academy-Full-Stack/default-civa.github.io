@@ -271,19 +271,12 @@ h4 {
 .input-default::placeholder{
     color: #B5B5B5;
     font-size: 16px;
- 
 }
 .input-container:not(.input-container[data-error])  .input-default:focus{
     border: 2px solid $d-coral;
     padding-left: 13px;
 }
-
-.input-container:not(.input-container[data-error])  .input-default.input-blue:focus{
-    border: 2px solid $d-blue;
-    padding-left: 13px;
-     
-}
-
+ 
 .input-default:disabled{
     background-color: #E8E8E8;
 }
@@ -292,6 +285,19 @@ h4 {
     color: $d-blue-dark;
     background-color: #fff3f2;
 }
+/* INPUT NUMBER CELL PHONE */
+.input-number-ddi{
+    width: 55px;
+    padding-left:  10px ;
+    padding-right:  10px ;
+}
+.input-container:not(.input-container[data-error])  .input-default.input-number-ddi:focus{
+    padding-left: 9px;
+}
+.input-number-cel{
+    width: 140px;
+}
+
  /* MENSAGEM DE ERRO INPUT */
 .input-container[data-error]::after{
     content: attr(data-error);
@@ -366,14 +372,17 @@ h4 {
 .menu-nav li:hover:not(.active-menu-nav){
     border-bottom: 3px solid #ff7d667a;
 }
-.container-rodapé-menu a{
+.container-rodape-menu a{
     color: $d-white;
     font-size: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.container-rodapé-menu{
+.container-rodape-menu img{
+    margin-right: 5px;
+}
+.container-rodape-menu{
     text-align: center;
     margin: 10px 0px;
 }
@@ -562,6 +571,20 @@ h4 {
     margin-bottom: 5px;
 }
 
+/* INPUT NUMBER CELL PHONE */
+.container-row{
+    display: flex;
+}
+
+.input-street{
+    width: 125px;
+}
+.input-address{
+    width: 70px;
+    margin-right: 5px;
+}
+
+ /* SELECT HEADER */
 .select-header-box{
     height: 20px;
     color: $d-blue-dark;
@@ -1065,16 +1088,22 @@ height: 100%;
 .container-box-right > img{
     width: 700px;
 }
-.container-rodapé-initial{
+.container-rodape-initial{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.container-rodape-page a{
+    display: flex;
+    align-items: center;
+}
+.container-rodape-page img{
+    margin-right: 5px;
 }
 .containers-wrapper{
     height: 100%;
     display: flex;
     align-items: center;
- 
 }
 
 /* LAYOUT INITIAL LOGIN */
