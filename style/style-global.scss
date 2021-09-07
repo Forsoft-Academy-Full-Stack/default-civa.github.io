@@ -250,6 +250,7 @@ h4 {
 .input-container{
     display: flex;
     flex-direction: column;
+     
 }
 .input-container > label{
     font-size: 14px;
@@ -545,6 +546,7 @@ h4 {
     height: 100%;
     padding: 0px 14px;
     font-size: 14px;
+    color: $d-blue-dark;
 }
 .select-default {
     position: relative;
@@ -552,6 +554,7 @@ h4 {
     height: 40px;
     display: flex;
     align-items: center;
+    color: $d-blue-dark;
 }
 .select-default .icon-select{
     position: absolute;
