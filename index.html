@@ -11,7 +11,7 @@ rel="stylesheet">
 <link rel="stylesheet" href="style/style-global.css">
 
 
-<title>Itens</title>
+<title>Componentes</title>
 
 
 <style>
@@ -77,27 +77,46 @@ letter-spacing: 1px;
 </ul>
 </nav>
 <div style="margin: 20px auto; display: flex; justify-content: center;">
-    <p style="color: white;">Versão 2.0</p></div>
+    <p style="color: white;">Versão 2.5</p>
+</div>
 </div>
 
 <div id="container-main">
 
 <div id="wrapper-main">
 
-<section>
+
+<section class="space">
+<div>
+<a href="style/style-global.css" target="_blank"><button class="btn-default d-green" >Copiar style-global.css</button></a>
+</div>
+
+</section>
+
+
+
+<section class="space">
 
 <div>
 <h1>Poppins - H1 - 51px</h1>
 <h2>Poppins - H2 - 34px</h2>
 <h3>Poppins - H3 - 24px</h3>
 <h4>Poppins - H4 - 18px</h4>
-<p>Poppins - body - 14px</p>
+<p>Poppins - body - 16px</p>
 </div>
-
 </section>
 
-<section class="colors">
+<section class="space">
+    <p style="margin-top: 30px;">Para utilizar os <b><a href="https://fonts.google.com/icons" target="_blank">icones</a></b> do Google Fonts basta colar a tag abaixo no head do seu HTML</p>
+    <textarea>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    </textarea>
+</section>
 
+
+<h3>Cores</h3>
+<section class="colors">
 <div style="width: 100px; height: 100px; margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" class="d-blue">d-blue</div>
 
 <div style="width: 100px; height: 100px; margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" class="d-blue-blue">d-blue-blue</div>
@@ -116,12 +135,12 @@ letter-spacing: 1px;
 
 <div style="width: 100px; height: 100px; margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" class="d-red-out">d-red-out</div>
 
-<div style="width: 100px; height: 100px; margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" class="d-green">d-red-out</div>
+<div style="width: 100px; height: 100px; margin: 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center;" class="d-green">d-green</div>
 
 </section>
 
 <!-- PICTURES -->
-
+<h3>Favicon</h3>
 <section class="space">
 
     <img src="img/favicon-gs.svg" alt="" width="100" style="margin: 10px;">
@@ -140,6 +159,17 @@ letter-spacing: 1px;
 </textarea>
 
 </section>
+ 
+<!-- BOTOES PEQUENOS -->
+<section class="space"> 
+
+<div> 
+<button class="btn-default btn-medium d-blue">btn-medium</button>
+</div>
+<textarea class="scroll-default">
+<button class="btn-default btn-medium d-blue">btn-medium</button>
+</textarea>
+</section>
 
 <!-- BOTOES PEQUENOS -->
 <section class="space"> 
@@ -151,7 +181,6 @@ letter-spacing: 1px;
 <button class="btn-default btn-small d-blue">btn-small</button>
 </textarea>
 </section>
-
 
 
 <!-- INPUTS -->
@@ -201,17 +230,57 @@ letter-spacing: 1px;
 <input type="text" value="Lorem ipsum" class="input-default">
 </div>
 </textarea>
-<!-- INPUT DEFAULT BLUE  -->
+<!-- INPUT NUMBER CELL PHONE  -->
 <div>
 <div class="input-container">
 <label for="">Label</label>
-<input type="text" placeholder="Lorem Ipsum" class="input-default input-blue">
+<div class="container-row-number">
+<input type="text" placeholder="55+" class="input-default input-number-ddi">
+<input type="text" placeholder="Lorem Ipsum" class="input-default input-number-cel">
 </div>
 </div>
+</div>
+
 <textarea class="scroll-default">
 <div class="input-container">
 <label for="">Label</label>
-<input type="text" placeholder="Lorem Ipsum" class="input-default input-blue">
+<div class="container-row-number">
+<input type="text" placeholder="55+" class="input-default input-number-ddi">
+<input type="text" placeholder="Lorem Ipsum" class="input-default input-number-cel">
+</div>
+</div>
+</textarea>
+
+<!-- INPUT STREET AND ADDRESS  -->
+<div>
+    <div class="input-container">
+        <label for="">Label</label>
+    <div class="container-row">
+        <div class="select-default input-address">
+        <select required>
+        <option value="1" selected>R.</option>
+        <option value="2">Av.</option>
+        </select>
+        <span class="material-icons-round icon-select">expand_more</span>
+        </div>
+        <input type="text" placeholder="Lorem" class="input-default input-street" >
+    </div>
+    </div>
+</div>
+
+<textarea class="scroll-default">
+<div class="input-container">
+<label for="">Label</label>
+<div class="container-row">
+<div class="select-default input-address">
+<select required>
+<option value="1" selected>Rua</option>
+<option value="2">Av.</option>
+</select>
+<span class="material-icons-round icon-select">expand_more</span>
+</div>
+<input type="text" placeholder="Lorem" class="input-default input-street" >
+</div>
 </div>
 </textarea>
 </section>
@@ -347,8 +416,8 @@ letter-spacing: 1px;
 <span class="toggle-name">Ativado</span>
 </div>
 </div>
-
-<textarea class="scroll-default" >
+<p>para funcionar basta referenciar o código <b>toggle-botton.js</b></p>
+<textarea class="scroll-default" style="margin-bottom: 20px;">
 <div class="toggle-container">
 <div class="toggle-btn">
 <div class="inner-circle"></div>
@@ -356,8 +425,9 @@ letter-spacing: 1px;
 </div>
 </div>
 </textarea>
-
-</section>
+<a href="js/toggle-botton.js" target="_blank" style="margin-bottom: 40px;"><button class="btn-default d-green" >Copiar toggle-botton.js</button></a>
+     
+</section> 
 
 <!-- OPÇÕES DO GERENCIAR USUARIO -->
 <section class="space">
@@ -455,14 +525,17 @@ letter-spacing: 1px;
 <section class="space">
 <div>
 <table class="table-default">
+<thead>
 <tr>
 <th><input type="checkbox"></th>
 <th>Nome</th>
 <th>Identidade</th>
 <th>Data</th>
-<th>Número CIVA</th>
+<th>Código CIVA</th>
 <th></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><input type="checkbox"></td>
 <td>Samuel Claudino da Silva</td>
@@ -471,7 +544,6 @@ letter-spacing: 1px;
 <td>BR55123456789</td>
 <td><button class="btn-table-manage">Gerenciar</button></td>
 </tr>
-
 <tr>
 <td><input type="checkbox"></td>
 <td>Samuel Claudino da Silva</td>
@@ -480,19 +552,22 @@ letter-spacing: 1px;
 <td>BR55123456789</td>
 <td><button class="btn-table-manage">Gerenciar</button></td>
 </tr>
-
+</tbody>
 </table>
 </div>
 <textarea class="scroll-default">
 <table class="table-default">
+<thead>
 <tr>
 <th><input type="checkbox"></th>
 <th>Nome</th>
 <th>Identidade</th>
 <th>Data</th>
-<th>Número CIVA</th>
+<th>Código CIVA</th>
 <th></th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td><input type="checkbox"></td>
 <td>Samuel Claudino da Silva</td>
@@ -501,7 +576,6 @@ letter-spacing: 1px;
 <td>BR55123456789</td>
 <td><button class="btn-table-manage">Gerenciar</button></td>
 </tr>
-
 <tr>
 <td><input type="checkbox"></td>
 <td>Samuel Claudino da Silva</td>
@@ -510,7 +584,7 @@ letter-spacing: 1px;
 <td>BR55123456789</td>
 <td><button class="btn-table-manage">Gerenciar</button></td>
 </tr>
-
+</tbody>
 </table>
 </textarea>
 </section>

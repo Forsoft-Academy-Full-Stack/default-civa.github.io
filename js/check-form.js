@@ -8,21 +8,29 @@ getElement(nameForm).addEventListener('submit', checkForm)
 
 function checkForm(event){
 
-   for(let num = 0; num < elementsForm.length ; num++){
+let formComplet = true 
+
+// se o formulario estiver vazio
+for(let num = 0; num < elementsForm.length ; num++){
 
     if(getElement(elementsForm[num]).value == ''){
 
-            getElement(elementsForm[num]).parentElement.setAttribute('data-error','Campo obrigatório!')
+        formComplet = false
+        getElement(elementsForm[num]).parentElement.setAttribute('data-error','Campo obrigatório!')
 
     } else {
-            getElement(elementsForm[num]).parentElement.removeAttribute('data-error')
-        }
+
+        getElement(elementsForm[num]).parentElement.removeAttribute('data-error')
+    
     }
-       event.preventDefault()
 }
 
+// Caso esteja todo preenchido
+if(formComplet == true){
+window.alert('Formulario enviado!')
+} 
 
-/* if((elementsForm.length-1) == num){
-    window.alert('Cadastro enviado')
-    break;    
-} */
+ 
+
+       event.preventDefault()
+}

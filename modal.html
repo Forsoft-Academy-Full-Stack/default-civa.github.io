@@ -72,11 +72,13 @@ width: 100%;
 
 <div class="container-middle">
  
-<button class="btn-default d-coral" id="modalopen2">Ativar modal</button>
+<button class="btn-default d-coral" id="modalopen">Ativar modal</button>
 
-<textarea style="margin-top: 30px;">
-    <!-- MODAL DEFAULT -->
-<div id="container-modal">
+
+<div style="margin-top: 30px;"><p>Para o FAQ funcionar basta referenciar o arquivo <b>modal-func.js</b></p></div>
+<textarea>
+<!-- MODAL DEFAULT -->
+<div class="container-modal">
     <span class="modal-default">
         <div class="group-info-modal">
         <img src="./img/icon_atention.svg" alt="">
@@ -84,19 +86,23 @@ width: 100%;
         <p>A eliminação dos dados é irreversível.</p>    
         </div>
         <div class="group-btn-modal">
-        <button class="btn-default d-coral" id="modalclose2" style="min-width: 150px;">Finalizar</button>
-        <button class="btn-default d-coral-out" id="modalclose2" style="min-width: 150px;">Finalizar</button>    
+        <button class="btn-default d-coral" id="modalclose" style="min-width: 150px;">Voltar</button>
+        <button class="btn-default d-coral-out" id="modalclose" style="min-width: 150px;">Finalizar</button>    
         </div>
 </span>
 </div>
 </textarea>
+<div>
+    <a href="js/modal-func.js" target="_blank"><button class="btn-default d-green">Copiar modal-func.js</button></a>
+</div>
 
 </div>
+
 </div> 
 </div> 
 
 <!-- MODAL DEFAULT -->
-<div id="container-modal">
+<div class="container-modal">
     <span class="modal-default">
         <div class="group-info-modal">
         <img src="./img/icon_atention.svg" alt="">
@@ -104,8 +110,8 @@ width: 100%;
         <p>A eliminação dos dados é irreversível.</p>    
         </div>
         <div class="group-btn-modal">
-        <button class="btn-default d-coral" id="modalclose2" style="min-width: 150px;">Finalizar</button>
-        <button class="btn-default d-coral-out" id="modalclose2" style="min-width: 150px;">Finalizar</button>    
+        <button class="btn-default d-coral btn-medium" id="modalclose">Voltar</button>
+        <button class="btn-default d-coral-out btn-medium" id="modalclose">Finalizar</button>    
         </div>
 </span>
 </div>
@@ -116,23 +122,6 @@ width: 100%;
 
 
 
-<script>
-    // CHAMAR MODAL
-    const modalcontainer = document.querySelector('#container-modal')
-
-    const modalbtnclose = document.querySelector('#modalclose2')
-
-    const modalbtnopen = document.querySelector('#modalopen2')
-
-
-
-    modalbtnopen.onclick = event => {
-        modalcontainer.style.display = 'flex'
-    }
-
-    modalbtnclose.onclick = event => {
-        modalcontainer.style.display = 'none'
-    }
-</script>
+<script src="js/modal-func.js"></script>
 </body>
 </html>

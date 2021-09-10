@@ -9,29 +9,28 @@
     rel="stylesheet">
     <!-- ESTILOS -->
     <link rel="stylesheet" href="style/style-global.css">
- 
+  
 
     <title>layout</title>
 
-    <style>
-.container-header {background-color: tomato; display: flex; flex-direction: column; align-items: flex-start; border-radius: 7px;}
-.container-middle{background-color: rgb(255, 131, 109); border-radius: 7px;}
-.container-bottom {background-color: rgb(255, 172, 158); border-radius: 7px;}
+<style>
 textarea {
 padding: 10px;
-height: 500px;
+height: 200px;
 line-height: 1.5;
 border-radius: 5px;
 border: 1px solid #ccc;
 box-shadow: none;
-margin-bottom: 50px;
+margin-bottom: 10px;
 font-size: .8rem;
 letter-spacing: 1px;
 width: 100%;
 background-color: white;
 }
-
-    </style>
+p{
+    margin-top: 30px;
+}
+</style>
 
 </head>
 <body id="container-manager">
@@ -72,12 +71,13 @@ background-color: white;
  <div id="wrapper-main">
 
     <header class="container-header">
-        <h1>header</h1>
+        <h3>Layouts</h3>
     </header>
-    <div class="container-middle">
-        <h1>middle</h1>
 
-        <textarea style="height: 400px;" class="scroll-default">
+    <div class="container-middle">
+
+        <p>Layout padrão</p>
+        <textarea class="scroll-default">
 <body id="container-manager">
 
     <div id="container-menu"></div>
@@ -95,23 +95,113 @@ background-color: white;
             </div>    
 
         </div>
-
 </body>
+
         </textarea>
+        <a href="layout-padrao.html" target="_blank"><button class="btn-default d-coral">Vizualizar Layout Padrão</button></a>   
+
+        <p>Layout login</p>
+        <textarea class="scroll-default">
+            <body id="container-manager-initial">
+
+                <div id="container-main-initial">
+                 
+                    <section class="wrapper-main-initial">
+                        <div class="container-box-left">
+                
+                           <div class="wrapper-top-initial">
+                            <h1>Bem Vindo!</h1>
+                            <h2 class="login-initial">Lorem Ipsum</h2>
+                 
+                             <form action="" class="box-form-initial max-width">
+                                     <div class="input-container max-width">
+                                     <label for="">Label</label>
+                                     <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+                                     </div>                                                
+                                     <div class="input-container max-width">
+                                     <label for="">Label</label>
+                                     <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+                                     </div>                                                
+                             </form>
+                             <button class="btn-default d-coral max-width" form="">Entrar</button>
+                
+                             <a href="" class="initial-forgot-password">Esqueceu a senha?</a>
+                
+                             </div>
+                
+                             <div class="wrapper-bottom-initial"><a href="">Esqueci meu número CIVA</a></div>
+                
+                        </div>
+                        
+                        <div class="container-box-right">
+                            <img src="img/background-login-gestores.svg" alt="">
+                        </div>
+                    </section>
+                 
+                
+                <footer class="container-rodape-initial">
+                
+                    <div class="container-rodape-page"><a href="" class=""><img src="img/icon-civa-footer-darkblue.svg" alt="">F.A. © 2021</a></div>
+                
+                </footer>
+                
+                </div>
+                
+                
+                </body>
+        </textarea>
+        <a href="layout-initial.html" target="_blank"><button class="btn-default d-coral">Vizualizar Layout Login</button></a>
+
+
+
+        <p>Layout login - secundarias</p>
+        <textarea class="scroll-default">
+            <body id="container-manager-initial">
+
+                <div id="container-main-initial">
+                 
+                    <section class="wrapper-main-initial">
+                        <div class="container-box-left">
+                
+                           <div class="wrapper-top-initial">
+                            <h2>Lorem Ipsum</h2>
+                            <p>Lorem ipsum, dolor sit amet consectetur</p>
+                             <form action="" class="box-form-initial max-width">                                              
+                                     <div class="input-container max-width">
+                                     <label for="">Label</label>
+                                     <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+                                     </div>                                                
+                             </form>
+                             <button class="btn-default d-coral max-width" form="">Entrar</button>
+                 
+                             </div>
+                
+                        </div>
+                        
+                        <div class="container-box-right">
+                            <img src="img/background-login-gestores.svg" alt="">
+                        </div>
+                    </section>
+                 
+                
+                <footer class="container-rodape-initial">
+                
+                    <div class="container-rodape-page"><a href="" class=""><img src="img/icon-civa-footer-darkblue.svg" alt="">F.A. © 2021</a></div>
+                    
+                </footer>
+                
+                </div>
+                
+                
+                </body>
+        </textarea>
+        <a href="layout-variable.html" target="_blank"><button class="btn-default d-coral">Vizualizar Layout Login Secundaria</button></a>
 
     </div>
-
-    <div class="container-bottom">
-        <h1>bottom</h1>
-    </div>  
+ 
 
  </div> 
 </div> 
-
- 
- <script>
- 
-</script>    
  
 
 </body>
