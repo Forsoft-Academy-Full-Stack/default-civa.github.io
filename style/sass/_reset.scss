@@ -1,0 +1,45 @@
+@import './colors';
+
+*{
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    font-style: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    box-sizing: border-box;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    outline-color: rgba(87, 87, 253, 0);
+    outline-width: 0px;
+}
+
+/* PADRONIZAÇÃO FONTS */
+a{color: $d-blue-dark;}
+
+p{
+    font-size: 16px;
+    color: $d-blue-dark;
+}
+
+h1{
+    font-size: 51px;
+    color: $d-blue-dark;
+}
+
+h2 {
+    font-size: 34px;
+    color: $d-blue-dark;
+}
+
+h3 {
+    font-size: 24px;
+    color: $d-blue-dark; 
+}
+h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: $d-blue-dark;
+}

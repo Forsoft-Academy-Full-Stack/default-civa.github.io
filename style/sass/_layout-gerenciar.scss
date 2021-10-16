@@ -1,0 +1,68 @@
+@import './colors';
+
+
+/* LAYOUT GERENCIAMENTO */
+#container-manager{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "sidebar main";
+    grid-template-rows: 1fr;
+    grid-template-columns: 231px 1fr;
+    position: relative;
+    overflow-x: hidden;
+    background-color: $d-white;
+}
+
+
+
+/* MENU  */
+
+#container-manager #container-menu{
+    grid-area: sidebar;
+    background-color: $d-coral;
+    height: 100%;
+    position: fixed;
+    width: 231px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+#container-manager #container-main{
+    grid-area: main;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+ 
+}
+
+#container-manager #wrapper-main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;  
+    width: 100%;
+    max-width: 1075px;
+}
+
+.container-header {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-middle{
+    width: 100%;
+    height: 100%;
+}
+
+.container-bottom {
+    width: 100%;
+}
+.container-bottom > a, .container-bottom > .btn-default{
+    margin-right: 45px;
+}

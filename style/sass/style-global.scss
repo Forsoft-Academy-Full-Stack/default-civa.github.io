@@ -1,0 +1,91 @@
+/* Versão 13-10-2021 */
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap');
+
+/* RESET */
+@import 'reset';
+
+/* CORES */
+@import 'colors';
+
+/* BOTOES */
+@import './buttons';
+
+/* INPUTS */
+@import './inputs';
+
+/* TOGGLE BUTTON */
+@import './toggle-button';
+
+/* MENU NAVEGAÇÃO */
+@import './menu-navegacao';
+
+/* BARRA PESQUISAR */
+@import './barra-pesquisa';
+
+/* TABELA  */
+@import './tabela';
+
+/* PAGINAÇÃO */
+@import './paginacao';
+
+/* SELECT */
+@import './select';
+
+/* OPÇÕES DO GERENCIAR USUARIO */
+@import './opcoes-gerenciar-usuarios';
+
+/* BOTÃO ADICIONA INPUT */
+@import './botao-add-input';
+
+/* MENU SIDEBAR */
+@import './menu-sidebar';
+
+/* SELECIONAR LINGUA */
+@import './selecionar-lingua';
+
+/* FAQ */
+@import './faq';
+
+/* BOX */
+@import './box';
+
+/* MODAL */
+@import './modal';
+
+/* LAYOUT GERENCIAR */
+@import './layout-gerenciar';
+
+/* LAYOUT LOGIN */
+@import './layout-login';
+
+
+
+
+/* WIDTH 100% */
+.max-width{
+    width: 100%;
+}
+
+/* NAO SELECIONAR OS ICONES*/
+.material-icons-round{
+    user-select: none;
+}
+
+/* SCROLL DEFAULT */
+
+.scroll-default{
+    overflow: auto;
+}
+
+.scroll-default::-webkit-scrollbar-thumb {
+    background: rgb(185, 185, 185);
+    border-radius: 30px;
+}
+
+.scroll-default::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.096);
+    border-radius: 50px;
+    width: 9px;
+}

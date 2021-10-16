@@ -1,0 +1,78 @@
+@import './colors';
+/* DEFAULT BOX */
+.box-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box-wrapper{
+    height: 530px;
+    width: 450px;
+     display: flex;
+    flex-direction: column; 
+    overflow: hidden; 
+    border-radius: 7px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 30px;
+}
+
+.box-header{
+    background-color: #FF7E66;
+    width: 100%;
+    height: 30px;
+    padding: 0px 10px;
+    color: $d-white;
+    display: flex;
+    align-items: center;
+    font-style: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.box-middle{
+    margin-top: 0px;
+    height: 460px;
+    width: 100%;
+}
+.box-middle-max{
+    height: 500px;
+}
+.box-bottom{
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border-top: 1px solid #E8E8E8;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* BOX WITH FORM */
+.box-middle-form {
+    padding: 15px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+}
+.box-middle-form > .input-container{
+    margin-bottom: 15px;
+}
+
+
+
+/* CONFIG TABLE WITH REGION */
+.box-config-region {
+    height: 500px;
+}
+ 
+.box-config-region > .input-container{
+    margin: 15px 10px;
+}
+
+/* TAMANHO BOX */
+.size-box{
+    height: 403px;
+}

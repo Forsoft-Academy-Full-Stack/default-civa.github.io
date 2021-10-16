@@ -1,0 +1,102 @@
+@import './colors';
+
+/* INPUTS */
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container > label{
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: $d-blue-dark;
+}
+.input-default{
+    height: 40px;
+    width: 200px;
+    border-radius: 7px;
+    font-size: 16px;
+    border: 1px solid #DFDFDF;
+    padding-left:  10px;
+    padding-right:  10px;
+    position: relative;
+    color: $d-blue-dark;
+}
+input::placeholder,textarea::placeholder{
+    color: #B5B5B5;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+.input-container:not(.input-container[data-error])  .input-default:focus{
+    border: 2px solid $d-coral;
+    padding-left: 9px;
+}
+ 
+input:disabled{
+    background-color: #E8E8E8;
+}
+.input-container[data-error] .input-default{
+    border: 2px solid $d-color-error;
+    color: $d-blue-dark;
+    background-color: #fff3f2;
+}
+/* INPUT NUMBER CELL PHONE */
+.container-row-number{
+    display: flex;
+}
+.input-number-ddi{
+    width: 55px;
+    padding-left:  10px ;
+    padding-right:  10px ;
+    margin-right: 5px;
+}
+.input-container:not(.input-container[data-error])  .input-default.input-number-ddi:focus{
+    padding-left: 9px;
+}
+.input-number-cel{
+    width: 140px;
+}
+
+ /* MENSAGEM DE ERRO INPUT */
+.input-container[data-error]::after{
+    content: attr(data-error);
+    color: $d-color-error;
+    font-size: 12px;
+    margin: 5px 5px 0px;
+}
+
+/* INPUT NUMBER CELL PHONE */
+.container-row{
+    display: flex;
+}
+.input-address{
+    width: 70px;
+    margin-right: 5px;
+}
+.input-address-max{
+    width: 90px;
+    margin-right: 5px;
+}
+.input-street{
+    width: 125px;
+}
+
+/* TEXT AREA */
+textarea{
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #DFDFDF;
+    padding-top: 5px;
+    padding-left:  10px;
+    padding-right:  10px;
+    color: $d-blue-dark;
+    height: 100px;
+}
+
+/* LINHA INPUT */
+hr{
+    border-bottom: 1px solid #dfdfdf;
+}

@@ -1,0 +1,63 @@
+@import './colors';
+
+
+/* SELECT DROPDOWN */
+.select-default > select {
+    border: 1px solid #DFDFDF;
+    padding: 5px;
+    appearance: none;
+    width: 100%;
+    position: absolute;
+    border-radius: 7px;
+    height: 100%;
+    padding: 0px 14px;
+    font-size: 16px;
+    color: $d-blue-dark;
+}
+.select-default {
+    position: relative;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: $d-blue-dark;
+}
+select:disabled{
+    background-color: #E8E8E8;
+}
+.select-default .icon-select{
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    margin-right: 5px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.select-default.select-out > select{
+    border: 0;
+    font-size: 12px;
+}
+.select-default.select-label{
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+/* SELECT HEADER */
+.select-header-box{
+    height: 20px;
+    color: $d-blue-dark;
+    width: 175px;
+}
+.select-header-box > select{
+    font-size: 13px;
+    background-color: $d-white;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+}
+.select-header-box .icon-select {
+    color: $d-blue-dark;
+    margin-right: 5px;
+    font-size: 18px;
+}

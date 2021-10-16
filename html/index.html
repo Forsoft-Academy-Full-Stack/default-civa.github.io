@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="img/favicon-gs.svg" type="image/x-icon">
+<link rel="shortcut icon" href="../img/favicon-gs.svg" type="image/x-icon">
 <!-- ICONES -->
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
 rel="stylesheet">
 <!-- ESTILOS -->
-<link rel="stylesheet" href="style/style-global.css">
+<link rel="stylesheet" href="../../style/css/style-global.css">
 
 
 <title>Componentes</title>
@@ -47,6 +47,7 @@ letter-spacing: 1px;
 </head>
 <body id="container-manager">
 
+<!-- MENU -->
 <div id="container-menu">
 <nav class="menu-sidebar">
 <ul>
@@ -54,41 +55,51 @@ letter-spacing: 1px;
 <a href="index.html" class="btn"><span class="material-icons-round">home</span>Componentes</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="layout_default.html"><span class="material-icons-round">view_sidebar</span>Layout</a>
+<a href="././layout/layout.html"><span class="material-icons-round">view_sidebar</span>Layout</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="menu_default.html"><span class="material-icons-round">menu</span>Menu</a>
+<a href="./menu/menu.html"><span class="material-icons-round">menu</span>Menu</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="box_dafault.html"><span class="material-icons-round">widgets</span>Boxs</a>
+<a href="./box/box.html"><span class="material-icons-round">widgets</span>Boxs</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="modal.html"><span class="material-icons-round">open_in_new</span>Modal</a>
+<a href="./modal/modal.html"><span class="material-icons-round">open_in_new</span>Modal</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="faq_default.html"><span class="material-icons-round">help</span>FAQ</a>
+<a href="./faq/faq.html"><span class="material-icons-round">help</span>FAQ</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="language.html"><span class="material-icons-round">g_translate</span>Linguagem</a>
+<a href="./language/language.html"><span class="material-icons-round">g_translate</span>Linguagem</a>
 </li>
 <li class="item-menu"><i></i><i></i>
-<a href="validation-form.html"><span class="material-icons-round">fact_check</span>Validação formulario</a>
+<a href="./validation/validation-form.html"><span class="material-icons-round">fact_check</span>Validação formulario</a>
 </li>
 </ul>
 </nav>
 <div style="margin: 20px auto; display: flex; justify-content: center;">
-    <p style="color: white;">Versão 2.5</p>
+    <p style="color: white;">Versão 3</p>
 </div>
 </div>
+
 
 <div id="container-main">
 
 <div id="wrapper-main">
 
+<section class="space" style="margin-bottom: 50px">    
+    <ul>
+        <li>* Atualização nos box's</li>
+        <li>* Disable nos inputs</li>
+        <li>* Foto padrão no menu</li> 
+    </ul>
+    <br>
+    <p>Ultima atualização: 13/10/2021</p>
+</section>
 
 <section class="space">
 <div>
-<a href="style/style-global.css" target="_blank"><button class="btn-default d-green" >Copiar style-global.css</button></a>
+<a href="./../style/css/style-global.css" target="_blank"><button class="btn-default d-green" >Copiar style-global.css</button></a>
 </div>
 
 </section>
@@ -143,7 +154,19 @@ letter-spacing: 1px;
 <h3>Favicon</h3>
 <section class="space">
 
-    <img src="img/favicon-gs.svg" alt="" width="100" style="margin: 10px;">
+    <img src="./../img/favicon-gs.svg" alt="" width="100" style="margin: 10px;">
+</section>
+
+
+<h3>Imagens</h3>
+<section class="space" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+
+    <img src="./../img/background-login-gestores.svg" alt="" width="100" style="margin: 10px;">
+    <img src="./../img/icon-civa-footer-darkblue.svg" alt="" width="100" style="margin: 10px;">
+    <img src="./../img/icon-civa-footer.svg" width="100" style="margin: 10px; background-color: rgb(144, 144, 144);">
+      <img src="./../img/icon_atention.svg" alt="" width="100" style="margin: 10px;">
+    <img src="./../img/success_modal.svg" alt="" width="100" style="margin: 10px;">
+    <img src="./../img/no-user.png" alt="" width="100" style="margin: 10px;">
 </section>
 
 
@@ -692,7 +715,7 @@ Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam vero cum fugiat 
 </div> 
 </div> 
 
-<script src="js/toggle-botton.js"></script>   
+<script src="../../js/toggle-botton.js"></script>   
 
 </body>
 </html>

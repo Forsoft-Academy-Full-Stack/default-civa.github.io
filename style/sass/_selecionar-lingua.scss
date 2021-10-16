@@ -1,0 +1,17 @@
+@import './colors';
+/* SELECIONAR LINGUA */
+
+.select-language{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 140px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.material-icons-round.icon-green-check{
+    background-color: white;
+    border-radius: 50%;
+    color: $d-green-light;
+    user-select: none;
+}

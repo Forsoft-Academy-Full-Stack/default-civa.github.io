@@ -1,0 +1,45 @@
+@import './colors';
+
+/* MENU DE NAVEGAÇÃO */
+.menu-nav{
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+.menu-nav li{
+    margin-left: 20px;
+    padding: 0px 10px;
+}
+.menu-nav li:not(.active-menu-nav) a{
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $d-blue-dark;
+    opacity: 0.4;
+}
+.active-menu-nav{
+    border-bottom: 3px solid $d-coral;
+}
+.active-menu-nav a{
+    color: #133C55;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+}
+.menu-nav li:hover:not(.active-menu-nav){
+    border-bottom: 3px solid #ff7d667a;
+}
+.container-rodape-menu a{
+    color: $d-white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-rodape-menu img{
+    margin-right: 5px;
+}
+.container-rodape-menu{
+    text-align: center;
+    margin: 10px 0px;
+}

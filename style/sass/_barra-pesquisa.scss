@@ -1,0 +1,42 @@
+@import './colors';
+
+.search-box{
+    position: relative;
+    width: 350px;
+    height: 40px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 7px;
+    overflow: hidden;
+}
+.search-box > input{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 38px;
+    width: 73%;
+    border-radius: 7px;
+    font-size: 16px;
+    padding-left: 14px;
+}
+
+.search-box .btn-common{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    z-index: 1;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+}
+.search-box .btn-common{
+    right:0;
+}
+.btn-common > span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $d-white;
+}

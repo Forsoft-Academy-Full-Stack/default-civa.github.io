@@ -1,0 +1,33 @@
+@import './colors';
+/* MODAL */
+.container-modal{
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;  
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.modal-default{
+    height: 430px;
+    width: 450px;
+    background-color: $d-white;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 40px 40px;
+}
+.modal-default img{
+    user-select: none;
+}
+/* GROUP BOTTONS MODAL */
+.group-btn-modal{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}

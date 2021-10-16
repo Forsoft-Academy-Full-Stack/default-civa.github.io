@@ -1,0 +1,19 @@
+{
+  "name": "default.1.2",
+  "version": "1.0.0",
+  "description": "https://forsoft-academy-full-stack.github.io/default-civa.github.io/index.html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Forsoft-Academy-Full-Stack/default-civa.github.io.git"
+  },
+  "author": "Samuel Claudino & Thais Carvalho",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Forsoft-Academy-Full-Stack/default-civa.github.io/issues"
+  },
+  "homepage": "https://github.com/Forsoft-Academy-Full-Stack/default-civa.github.io#readme"
+}

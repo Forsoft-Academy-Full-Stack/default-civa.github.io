@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../img/favicon-gs.svg" type="image/x-icon">
+    <!-- ICONES -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+    rel="stylesheet">
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="../../style/css/style-global.css">
+
+    <title>Box</title>
+
+    <style>
+.space{
+display: flex;
+flex-wrap: wrap;
+margin: 20px 0px;
+}
+.space > div{
+margin: 5px;
+}
+ 
+.space > textarea {
+padding: 10px;
+height: 200px;
+line-height: 1.5;
+border-radius: 5px;
+border: 1px solid #ccc;
+box-shadow: none;
+margin-bottom: 50px;
+font-size: .8rem;
+letter-spacing: 1px;
+width: 100%;
+}
+ 
+    
+    </style>
+ 
+
+</head>
+<body id="container-manager">
+
+<!-- MENU -->
+<div id="container-menu">
+    <nav class="menu-sidebar">
+    <ul>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../index.html" class="btn"><span class="material-icons-round">home</span>Componentes</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../layout/layout.html"><span class="material-icons-round">view_sidebar</span>Layout</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../menu/menu.html"><span class="material-icons-round">menu</span>Menu</a>
+    </li>
+    <li class="item-menu active-item-menu"><i></i><i></i>
+    <a href="box.html"><span class="material-icons-round">widgets</span>Boxs</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../modal/modal.html"><span class="material-icons-round">open_in_new</span>Modal</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../faq/faq.html"><span class="material-icons-round">help</span>FAQ</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../language/language.html"><span class="material-icons-round">g_translate</span>Linguagem</a>
+    </li>
+    <li class="item-menu"><i></i><i></i>
+    <a href="./../validation/validation-form.html"><span class="material-icons-round">fact_check</span>Validação formulario</a>
+    </li>
+    </ul>
+    </nav>
+    <div style="margin: 20px auto; display: flex; justify-content: center;">
+        <p style="color: white;">Versão 3</p>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+<div id="container-main">
+ 
+<div id="wrapper-main">
+
+<div class="container-header">
+    <h3>Boxs</h3>
+     
+</div>
+
+<div class="container-middle">
+
+<p>Caso queira que o input ocupe todo espaço lateral do box basta acrescentar a classe <b>max-width</b> dentro do <b>input-container</b> e no <b>input-default</b></p>
+
+
+
+<!-- ITEM 1 -------------------------------------------------->
+<section class="space">
+
+    <!-- CONTAINER BOX'S -->
+    <div class="box-container">
+        <!-- CONTAINER BOX LEFT FORM -->
+        <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO -->
+            <header class="box-header">Box com Formulario
+                <!-- SELECT HEADER BOX -->
+                <div class="input-container">
+                    <div class="select-default select-header-box">
+                        <select required>
+                            <option value="" selected disabled>Selecionar</option>
+                            <option value="1">Documento Nacional</option>
+                            <option value="2">Passaporte</option>
+                        </select>
+                        <span class="material-icons-round icon-select">expand_more</span>
+                    </div>
+                    </div>
+            </header>
+        <!-- CONTAINER DO MEIO -->
+        <form class="box-middle box-middle-form scroll-default">
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+        
+        </form>
+        <!-- CONTAINER INFERIOR BOTOES -->
+            <div class="box-bottom">
+                <div class="toggle-container">
+                    <div class="toggle-btn">
+                        <div class="inner-circle"></div>
+                        <span class="toggle-name">Ativado</span>
+                    </div> 
+                    </div>
+                    <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
+                    <button class="btn-default btn-small d-red">Excluir</button>
+            </div>
+        </div>
+        
+            <!-- CONTAINER BOX RIGHT TABLE-->
+            <div class="box-wrapper">
+                <!-- CONTAINER CABEÇALHO -->
+                <header class="box-header">Box com Tabela</header>
+                <div class="box-middle box-middle-table scroll-default">
+                    <!-- CONTAINER DO MEIO -->
+                    <table class="table-default">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Estado</th>
+                            <th>CP</th>
+                            <th>Identificador</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                </div>
+                <!-- CONTAINER INFERIOR BOTOES -->
+                <div class="box-bottom">
+                    
+                        <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
+                        <button class="btn-default btn-small d-coral">Adicionar dose</button>
+                        <button class="btn-default btn-small d-green">Adicionar certificado</button>
+
+                </div>
+            </div>
+        
+        </div>
+        
+<p><b>.box-container</b> une os boxs, caso queira apenas um box delete o <b>.box-wrapper</b></p>
+<textarea class="scroll-default">
+
+    <div class="box-container">
+        <!-- CONTAINER BOX LEFT FORM -->
+        <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO -->
+            <header class="box-header">Box com Formulario
+                <!-- SELECT HEADER BOX -->
+                <div class="input-container">
+                    <div class="select-default select-header-box">
+                        <select required>
+                            <option value="" selected disabled>Selecionar</option>
+                            <option value="1">Documento Nacional</option>
+                            <option value="2">Passaporte</option>
+                        </select>
+                        <span class="material-icons-round icon-select">expand_more</span>
+                    </div>
+                    </div>
+            </header>
+        <!-- CONTAINER DO MEIO -->
+        <form class="box-middle box-middle-form scroll-default">
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+        
+        </form>
+        <!-- CONTAINER INFERIOR BOTOES -->
+            <div class="box-bottom">
+                <div class="toggle-container">
+                    <div class="toggle-btn">
+                        <div class="inner-circle"></div>
+                        <span class="toggle-name">Ativado</span>
+                    </div> 
+                    </div>
+                    <button class="btn-default btn-small d-grey-out" style="width: initial;">Redefinir senha</button>
+                    <button class="btn-default btn-small d-red">Excluir</button>
+            </div>
+        </div>
+        
+            <!-- CONTAINER BOX RIGHT TABLE-->
+            <div class="box-wrapper">
+                <!-- CONTAINER CABEÇALHO -->
+                <header class="box-header">Box com Tabela</header>
+                <div class="box-middle box-middle-table scroll-default">
+                    <!-- CONTAINER DO MEIO -->
+                    <table class="table-default">
+                        <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Estado</th>
+                            <th>CP</th>
+                            <th>Identificador</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                        <tr>
+                            <td>Hopital Pan</td>
+                            <td>Rio de Janeiro</td>
+                            <td>12016-102</td>
+                            <td>215648</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                </div>
+                <!-- CONTAINER INFERIOR BOTOES -->
+                <div class="box-bottom">
+                    
+                        <button class="btn-default btn-small d-coral-out">Nova vacinação</button>
+                        <button class="btn-default btn-small d-coral">Adicionar dose</button>
+                        <button class="btn-default btn-small d-green">Adicionar certificado</button>
+
+                </div>
+            </div>
+        
+        </div>
+
+</textarea>
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ITEM 2 -------------------------------------------------->
+<section class="space">
+
+<div class="box-container">   
+    
+    
+         <!-- CONTAINER BOX LEFT FORM -->
+     <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO -->
+            <header class="box-header">Box com Formulario</header>
+        <!-- CONTAINER DO MEIO -->
+        <form class="box-middle box-middle-form box-middle-max scroll-default">
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <textarea>
+                </textarea>
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            
+
+            
+        </form>
+        </div>
+
+
+
+<!-- CONTAINER BOX RIGHT TABLE-->
+    <div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO -->
+    <header class="box-header">Box com Tabela</header>
+    <div class="box-middle box-middle-table box-middle-max scroll-default">
+        <!-- CONTAINER DO MEIO -->
+        <table class="table-default">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Estado</th>
+                <th>CP</th>
+                <th>Identificador</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+            <tr>
+                <td>Hopital Pan</td>
+                <td>Rio de Janeiro</td>
+                <td>12016-102</td>
+                <td>215648</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+
+
+
+</div>
+
+<p>Box sem botoes na parte inferior</p>
+
+<textarea class="scroll-default" >
+
+    <div class="box-container">   
+    
+    
+        <!-- CONTAINER BOX LEFT FORM -->
+    <div class="box-wrapper">
+       <!-- CONTAINER CABEÇALHO -->
+           <header class="box-header">Box com Formulario</header>
+       <!-- CONTAINER DO MEIO -->
+       <form class="box-middle box-middle-form box-middle-max scroll-default">
+           
+           <div class="input-container">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default">
+           </div>
+
+           <div class="input-container">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default">
+           </div>
+
+           <div class="input-container">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default">
+           </div>
+           
+           <div class="input-container">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default">
+           </div>
+
+           <div class="input-container max-width">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+           </div>
+           
+           <div class="input-container max-width">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+           </div>
+           <div class="input-container max-width">
+               <label for="">Label</label>
+               <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+           </div>
+           
+
+           
+       </form>
+       </div>
+
+
+
+<!-- CONTAINER BOX RIGHT TABLE-->
+   <div class="box-wrapper">
+   <!-- CONTAINER CABEÇALHO -->
+   <header class="box-header">Box com Tabela</header>
+   <div class="box-middle box-middle-table box-middle-max scroll-default">
+       <!-- CONTAINER DO MEIO -->
+       <table class="table-default">
+           <thead>
+           <tr>
+               <th>Nome</th>
+               <th>Estado</th>
+               <th>CP</th>
+               <th>Identificador</th>
+           </tr>
+           </thead>
+           <tbody>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+           <tr>
+               <td>Hopital Pan</td>
+               <td>Rio de Janeiro</td>
+               <td>12016-102</td>
+               <td>215648</td>
+           </tr>
+       </tbody>
+       </table>
+   </div>
+   </div>
+
+
+
+</div>
+
+</textarea>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- ITEM 3 -------------------------------------------------->
+<section class="space">
+     
+ 
+ 
+    <div class="box-container">
+
+
+    <!-- CONTAINER BOX LEFT FORM --> 
+    <div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+        Config País
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-middle-form box-middle-max scroll-default"> 
+
+        <div class="input-container max-width">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+        </div>
+        </div>
+
+        <div class="input-container max-width">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+        <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+        </div>
+        </div>
+        
+       
+        <div class="add-new-subdivision container-btn-add max-width">
+            <span>Adicionar nova subdivisão</span>
+            <div class="input-circle d-coral">
+                <span class="material-icons-round">add</span>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    <!-- CONTAINER BOX RIGHT TABLE --> 
+    <div class="box-wrapper">
+        <!-- CONTAINER CABEÇALHO --> 
+        <header class="box-header">
+            Gerenciamento de subdivisão
+        </header>
+        <!-- CONTAINER DO MEIO -->
+        <div class="box-middle box-config-region">
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+
+        <div class="size-table-country-large scroll-default">
+            <table class="table-default table-config-country">
+            <tbody>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            <tr>
+            <td>Sudeste</td>
+            <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+            </tr>
+            </tbody>
+            </table>
+        </div>
+
+        </div>
+
+    </div>
+
+
+
+
+</div>
+
+
+
+
+    <textarea class="scroll-default">
+        <div class="box-container">
+
+
+            <!-- CONTAINER BOX LEFT FORM --> 
+            <div class="box-wrapper">
+            <!-- CONTAINER CABEÇALHO --> 
+            <header class="box-header">
+        
+                Config País
+        
+            </header>
+            <!-- CONTAINER DO MEIO -->
+            <div class="box-middle box-middle-form box-middle-max scroll-default"> 
+        
+                <div class="input-container max-width">
+                <label for="">Label</label>
+                <div class="container-btn-add">
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+                <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+                <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+                </div>
+                </div>
+        
+                <div class="input-container max-width">
+                <label for="">Label</label>
+                <div class="container-btn-add">
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+                <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">edit</span></div>
+                <div class="input-circle d-grey-out"><span class="material-icons-round icon-black">close</span></div>
+                </div>
+                </div>
+                
+               
+                <div class="add-new-subdivision container-btn-add max-width">
+                    <span>Adicionar nova subdivisão</span>
+                    <div class="input-circle d-coral">
+                        <span class="material-icons-round">add</span>
+                    </div>
+                </div>
+        
+            </div>
+            </div>
+        
+        
+        
+            <!-- CONTAINER BOX RIGHT TABLE --> 
+            <div class="box-wrapper">
+                <!-- CONTAINER CABEÇALHO --> 
+                <header class="box-header">
+                    Gerenciamento de subdivisão
+                </header>
+                <!-- CONTAINER DO MEIO -->
+                <div class="box-middle box-config-region">
+        
+                <div class="input-container">
+                <label for="">Label</label>
+                <div class="container-btn-add">
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+                <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+                </div>
+                </div>
+        
+        
+                <div class="size-table-country-large scroll-default">
+                    <table class="table-default table-config-country">
+                    <tbody>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    <tr>
+                    <td>Sudeste</td>
+                    <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+                    </tr>
+                    </tbody>
+                    </table>
+                </div>
+        
+                </div>
+        
+            </div>
+        
+        
+        
+        
+        </div>
+   </div>
+
+
+    </textarea>
+</section>
+
+
+
+
+
+
+
+<!-- ITEM 4 -------------------------------------------------->
+<section class="space">
+
+
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="select-default max-width">
+        <select required>
+        <option value="" selected disabled>Selecionar</option>
+        <option value="1">Subregião 1</option>
+        <option value="2">Subregião 2</option>
+        <option value="3">Subregião 3</option>
+        </select>
+        <span class="material-icons-round icon-select">expand_more</span>
+        </div>
+        </div>                    
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+
+        <div class="size-table-country-small scroll-default">
+        <table class="table-default table-config-country">
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        </table>
+        </div>
+
+    </div>
+</div>
+
+<textarea class="scroll-default" style="margin-top: 30px;">
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="select-default max-width">
+        <select required>
+        <option value="" selected disabled>Selecionar</option>
+        <option value="1">Subregião 1</option>
+        <option value="2">Subregião 2</option>
+        <option value="3">Subregião 3</option>
+        </select>
+        <span class="material-icons-round icon-select">expand_more</span>
+        </div>
+        </div>                    
+
+        <div class="input-container">
+        <label for="">Label</label>
+        <div class="container-btn-add">
+        <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+        <div class="input-circle d-coral"><span class="material-icons-round">add</span></div>
+        </div>
+        </div>
+
+
+        <div class="size-table-country-small scroll-default">
+        <table class="table-default table-config-country">
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        <tr>
+        <td>Sudeste</td>
+        <td><button class="btn-default btn-small d-coral-out">Excluir</button></td>
+        </tr>
+        </table>
+        </div>
+
+    </div>
+</div>
+</textarea>
+</section> 
+
+
+
+
+
+
+
+
+
+<!-- ITEM 5 -------------------------------------------------->
+<section class="space">
+
+
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container ">
+            <label for="">Label</label>
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        </div>
+        
+        <hr>
+
+        <div class="box-middle box-middle-form scroll-default size-box">
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<textarea class="scroll-default" style="margin-top: 30px;">
+<!-- CONTAINER BOX TABLE -->
+<div class="box-wrapper">
+    <!-- CONTAINER CABEÇALHO --> 
+    <header class="box-header">
+
+    Gerenciamento de subdivisão
+
+    </header>
+    <!-- CONTAINER DO MEIO -->
+    <div class="box-middle box-config-region">
+
+        <div class="input-container ">
+            <label for="">Label</label>
+            <input type="text" placeholder="Lorem Ipsum" class="input-default">
+        </div>
+        
+        <hr>
+
+        <div class="box-middle box-middle-form scroll-default size-box">
+            
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+            <div class="input-container max-width">
+                <label for="">Label</label>
+                <input type="text" placeholder="Lorem Ipsum" class="input-default max-width">
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</textarea>
+</section> 
+
+
+
+
+
+
+
+
+</div>
+</div> 
+</div> 
+
+
+
+
+
+</body>
+<script src="../../js/toggle-botton.js"></script>  
+</html>

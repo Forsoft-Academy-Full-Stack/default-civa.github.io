@@ -1,0 +1,31 @@
+@import './colors';
+
+.container-pagination{
+    width: 100%;
+    display: flex;
+}
+.pagination-nav{
+    margin: 0px auto;
+}
+.pagination-nav a{
+    float: left;
+    width: 20px;
+    font-size: 15px;
+    user-select: none;
+    font-weight: 500;
+    margin: 0px 7.5px;
+    text-align: center;
+    color: $d-blue-dark;
+}
+.pagination-nav span{
+    font-size: 12px;
+}
+.pagination-nav{
+    display: inline-block;
+}
+ 
+ a.active-pagination{
+    background-color: $d-coral;
+    color: $d-white;
+    border-radius: 5px;
+}

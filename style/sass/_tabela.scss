@@ -1,0 +1,73 @@
+@import './colors';
+
+.table-default{
+    width: 100%;
+    border-radius: 7px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.151)
+}
+
+.table-default td, .table-default th {
+    text-align: left;
+    padding: 0px 8px;
+    font-size: 16px;
+    height: 40px;
+    user-select: none;
+    color: $d-blue-dark;
+  }
+.table-default  th {
+    font-weight: 500;
+}
+.table-default > tbody > tr:nth-child(odd) {
+    background-color: #F2F2F2;
+  }
+
+/* BOX WITH TABLE */
+.box-middle-table .table-default {
+    box-shadow: none;
+}
+.box-middle-table .table-default td, .box-middle-table .table-default th{
+    font-size: 14px;
+}
+.box-middle-table .table-default td:first-child{
+    padding-left: 10px;
+}
+.box-middle-table .table-default td:last-child{
+    padding-right: 10px;
+}
+
+.box-middle-table .table-default th:first-child{
+    padding-left: 10px;
+}
+.box-middle-table .table-default th:last-child{
+    padding-right: 10px;
+}
+.box-middle-table .table-default thead th{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+}
+
+/* TABELA CONFIG PAIS BOX */
+.table-default.table-config-country{
+    box-shadow: none;
+}
+.table-default.table-config-country tr{
+    background-color: $d-white;
+    border-top: 1px solid #dfdfdf;
+}
+.table-default.table-config-country td:nth-child(1){
+    width: 100%;
+}
+.table-default.table-config-country > tbody > tr:nth-child(odd) {
+    background: none;
+}
+/* TAMANHO TABELA CONFIG REGION */
+.size-table-country-large{
+    margin-top: 38px;
+    height: 382px;
+}
+.size-table-country-small{
+    margin-top: 38px;
+    height: 300px;
+}

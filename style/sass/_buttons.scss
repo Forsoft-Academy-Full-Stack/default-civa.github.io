@@ -1,0 +1,177 @@
+@import './colors';
+
+/* COLORS BUTTONS */
+.d-blue{
+    background-color: $d-blue;
+    color: $d-white;
+}
+.d-blue:hover{
+    background-color: #5CC5FF;
+    transition: 0.5s;
+}
+.d-blue:active{
+    background-color: #008FDE;
+    transition: 0.5s;
+}
+
+.d-green{
+    background-color: $d-green;
+    color: $d-white;
+    transition: 0.5s;
+}
+.d-green:hover{
+    background-color: #84e68d;
+}
+.d-green:active{
+    background-color: #5cc567;
+}
+
+.d-blue-out{
+    background-color: $d-white;
+    border: 1px solid $d-blue;
+    color: $d-blue;
+    transition: 0.5s;
+}
+.d-blue-out:hover{
+    background-color: #EBF8FF;
+}
+.d-blue-out:active{
+    background-color: #D2EFFF;
+}
+
+.d-grey-out{
+    background-color: $d-white;
+    border: 1px solid $d-grey;
+    color: $d-grey;
+    transition: 0.5s;
+}
+.d-grey-out:hover{
+    background-color: #F3F3F3;
+}
+.d-grey-out:active{
+    background-color: #E1E1E1;
+}
+
+.d-blue-blue{
+    background-color: $d-blue-blue;
+    color: $d-blue;
+    transition: 0.5s;
+}
+.d-blue-blue:hover{
+    background-color: #C7EBFF;
+}
+.d-blue-blue:active{
+    background-color: #B2E4FF;
+}
+
+
+.d-red{
+    background-color: $d-red;
+    color: $d-white;
+    transition: 0.5s;
+}
+.d-red:hover{
+    background-color: #ff8f8f;
+}
+.d-red:active{
+    background-color: #FF6C6C;
+}
+
+
+.d-red-out{
+    background-color: #ffffff;
+    border: 1px solid $d-red;
+    color: $d-red;
+    transition: 0.5s;
+}
+.d-red-out:hover{
+    background-color: #fff0f0;
+}
+.d-red-out:active{
+    background-color: #FFE3E3;
+}
+
+
+.d-grey{
+    background-color: #EEEEEE;
+    color: $d-grey;
+    transition: 0.5s;
+}
+.d-grey:hover{
+    background-color: #E7E7E7;
+}
+.d-grey:active{
+    background-color: #D6D6D6;
+}
+
+
+.d-coral{
+    background-color: $d-coral;
+    color: $d-white;
+    transition: 0.5s;
+}
+.d-coral:hover{
+    background-color: #FF9582;
+}
+.d-coral:active{
+    background-color: #FF7157;
+}
+
+
+.d-coral-out{
+    background-color: #ffffff;
+    border: 1px solid $d-coral;
+    color: $d-coral;
+    transition: 0.5s;
+}
+.d-coral-out:hover{
+    background-color: #fff5ef;
+}
+.d-coral-out:active{
+    background-color: #FFEDE3;
+}
+
+
+
+/* BUTTONS */
+
+
+.btn-default{
+    padding: 0px 10px;
+    height: 40px;
+    min-width: 200px;    
+    border-radius: 7px;
+    font-size: 18px;
+    transition: 0.5s;
+    cursor: pointer;
+    font-weight: 600;
+    user-select: none;
+}
+
+/* BUTTONS SMALL */
+.btn-small{
+    height: 20px;
+    min-width: 100px;
+    font-size: 12px;
+}
+.btn-medium{
+    min-width: 150px;
+}
+
+/* BUTTON TABLE */
+.btn-table-manage{
+    font-size: 14px;
+    border: 1px solid $d-grey;
+    color: $d-grey;
+    padding: 0px 7px;
+    border-radius: 3px;
+    font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
+    user-select: none;
+}
+.btn-table-manage:hover{
+    background-color: $d-grey;
+    color: $d-white; 
+    transition: 0.5s;
+}
