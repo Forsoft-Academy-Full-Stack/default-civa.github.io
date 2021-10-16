@@ -1,3 +1,11 @@
-# Default CIVA
+## Default CIVA 3.0
 
-https://forsoft-academy-full-stack.github.io/default-civa.github.io/index.html
+* Atualização nos box's
+* Disable nos inputs
+* Foto padrão no menu
+* CSS minificado
+
+Ultima atualização: 13/10/2021
+
+
+[Acesse a página](https://forsoft-academy-full-stack.github.io/default-civa.github.io/html/index.html)
