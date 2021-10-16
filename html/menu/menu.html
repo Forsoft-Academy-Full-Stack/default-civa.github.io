@@ -81,8 +81,12 @@ width: 100%;
     <!-- PERFIL USUARIO -->
     <div class="profile-info">
         <div class="photo-profile">
-            <img src="./../../img/no-user.png" alt="foto perfil">
-            </div>
+            <img  id="photo-user" src="./../../img/no-user.svg" alt="foto perfil">
+            <form>
+            <input type="file" name='foto' id="get-photo">
+            </form>
+        </div>
+        
         <p class="name-user">Nome Sobrenome</p>
         <p>Cargo</p>
     </div>
@@ -110,6 +114,12 @@ width: 100%;
     
 </textarea>
 <a href="./menu-view.html" target="_blank"><button class="btn-default d-coral">Vizualizar Menu</button></a>
+
+<div style="margin-top: 20px;">
+    <a href="./../../js/photo-profile.js" target="_blank"><button class="btn-default d-green">Copiar photo-profile.js</button></a>
+</div>
+
+
  </div> 
 </div>
 

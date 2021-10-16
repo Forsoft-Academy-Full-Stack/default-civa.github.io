@@ -11,18 +11,35 @@
     overflow: hidden;
     position: relative;
 }
+
+
+.photo-profile:hover::before{
+    content: '';
+    border-radius: 50%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.301);
+    z-index: 1;
+    cursor: pointer;
+}  
+
 .photo-profile > img{
-    width: 100%; 
+    width: 100%;
+    position: absolute;
 }
 
 
-
+#get-photo{
+    display: none;
+}
 
 .profile-info{
     display: flex;
     flex-direction: column;
     color: $d-white;
     align-items: center;
+    position: relative;
 }
 .profile-info > p{
     color: $d-white;
