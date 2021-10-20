@@ -28,9 +28,5 @@ for(let num = 0; num < elementsForm.length ; num++){
 // Caso esteja todo preenchido
 if(formComplet == true){
 window.alert('Formulario enviado!')
-} 
-
- 
-
-       event.preventDefault()
+}  
 }
