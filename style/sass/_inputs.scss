@@ -30,11 +30,28 @@ input::placeholder,textarea::placeholder{
 }
 
 
-.input-container:not(.input-container[data-error])  .input-default:focus{
+.input-container:not(.input-container[data-error])  .input-default:focus,
+textarea:focus{
     border: 2px solid $d-coral;
     padding-left: 9px;
 }
- 
+textarea:focus{
+    padding-top: 4px;
+}
+
+/* TEXT AREA */
+textarea{
+    font-size: 16px;
+    border-radius: 7px;
+    border: 1px solid #DFDFDF;
+    padding-top: 5px;
+    padding-left:  10px;
+    padding-right:  10px;
+    color: $d-blue-dark;
+    height: 100px;
+    resize: none;
+} 
+
 input:disabled{
     background-color: #E8E8E8;
 }
@@ -84,17 +101,6 @@ input:disabled{
     width: 125px;
 }
 
-/* TEXT AREA */
-textarea{
-    font-size: 16px;
-    border-radius: 7px;
-    border: 1px solid #DFDFDF;
-    padding-top: 5px;
-    padding-left:  10px;
-    padding-right:  10px;
-    color: $d-blue-dark;
-    height: 100px;
-}
 
 /* LINHA INPUT */
 hr{
