@@ -3,7 +3,9 @@
 * Atualização nos Modais
 * Nova estrutura de Modal
 * Nova aba solicitações e pendentes
- 
+* Atualização mensagem de erro: incluindo select e contato
+* Atualização check-form
+
 Ultima atualização: 22/10/2021
 
 
