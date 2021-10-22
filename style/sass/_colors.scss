@@ -6,6 +6,10 @@ $d-blue-blue: #DFF4FF;
 
 $d-grey: #606060;  
 
+$d-grey-1: #B5b5b5;
+
+$d-grey-2: #DFDFDF;
+
 $d-red: #ff6464;  
 
 $d-coral: #FF7E66; 
@@ -17,3 +21,13 @@ $d-green: #73D77D;
 $d-white: #ffffff;
 
 $d-green-light: #00FF9A;
+
+.coral{
+    color: $d-coral;
+}
+.grey{
+    color: $d-grey;
+}
+.grey-1{
+    color: $d-grey-1;
+}
