@@ -23,23 +23,34 @@
     position: relative;
     color: $d-blue-dark;
 }
+input:disabled{
+    background-color: #E8E8E8;
+}
+
 input::placeholder,textarea::placeholder{
     color: #B5B5B5;
     font-size: 16px;
     font-weight: 300;
 }
 
-
 .input-container:not(.input-container[data-error])  .input-default:focus,
 textarea:focus{
     border: 2px solid $d-coral;
     padding-left: 9px;
 }
+
+.input-container[data-error] .input-default,
+.input-container[data-error] select{
+    border: 2px solid $d-color-error;
+    color: $d-blue-dark;
+    background-color: #fff3f2;
+}
+
+/* TEXT AREA */
 textarea:focus{
     padding-top: 4px;
 }
 
-/* TEXT AREA */
 textarea{
     font-size: 16px;
     border-radius: 7px;
@@ -51,15 +62,6 @@ textarea{
     height: 100px;
     resize: none;
 } 
-
-input:disabled{
-    background-color: #E8E8E8;
-}
-.input-container[data-error] .input-default{
-    border: 2px solid $d-color-error;
-    color: $d-blue-dark;
-    background-color: #fff3f2;
-}
 /* INPUT NUMBER CELL PHONE */
 .container-row-number{
     display: flex;
@@ -84,23 +86,6 @@ input:disabled{
     font-size: 12px;
     margin: 5px 5px 0px;
 }
-
-/* INPUT NUMBER CELL PHONE */
-.container-row{
-    display: flex;
-}
-.input-address{
-    width: 70px;
-    margin-right: 5px;
-}
-.input-address-max{
-    width: 90px;
-    margin-right: 5px;
-}
-.input-street{
-    width: 125px;
-}
-
 
 /* LINHA INPUT */
 hr{
